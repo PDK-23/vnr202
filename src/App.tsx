@@ -1,37 +1,35 @@
-import MainRoutes from "./routes/MainRoutes";
-import { App as AntdApp, ConfigProvider } from "antd";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import IntroPage from "./pages/IntroPage";
+import QuizPage from "./pages/QuizPage";
+import ChatbotPage from "./pages/ChatbotPage";
+import CaseStudyPage from "./pages/CaseStudyPage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import QAPage from "./pages/QAPage";
+import Musicai from "./pages/Musicai";
 
 function App() {
-  const queryClient = new QueryClient({
-    defaultOptions: {
-      queries: {
-        refetchOnWindowFocus: false,
-      },
-    },
-  });
-
   return (
-    <>
-      <AntdApp component={false}>
-        <ConfigProvider
-          tag={{ className: "text-[14px] font-semibold py-1 px-2" }}
-          // componentSize="large"
-          theme={{
-            token: {
-              colorPrimary: "#7f22fe",
-              colorLink: "#02cf5b",
-              borderRadius: 4,
-              fontFamily: "Bai Jamjuree",
-            },
-          }}
-        >
-          <QueryClientProvider client={queryClient}>
-            <MainRoutes />
-          </QueryClientProvider>
-        </ConfigProvider>
-      </AntdApp>
-    </>
+    <Router>
+      <div className="min-h-screen w-full flex flex-col bg-[#f4f7ff]">
+        <Header />
+        <main className="flex-1 flex flex-col justify-center px-0 w-full">
+          <div className="w-full flex-1 flex flex-col">
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/intro" element={<IntroPage />} />
+              <Route path="/quiz" element={<QuizPage />} />
+              <Route path="/chatbot" element={<ChatbotPage />} />
+              <Route path="/case-study" element={<CaseStudyPage />} />
+              <Route path="/qa" element={<QAPage />} />
+              <Route path="/musicai" element={<Musicai />} />
+            </Routes>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
