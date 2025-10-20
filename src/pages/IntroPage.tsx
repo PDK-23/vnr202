@@ -264,7 +264,7 @@ const QuickNav: React.FC = () => {
     { href: "#thuctien", label: "Thực tiễn VN" },
     { href: "#giaiphap", label: "Giải pháp" },
     { href: "#articles", label: "Thư viện" },
-    { href: "#ketluan", label: "Kết luận" },
+    // { href: "#ketluan", label: "Kết luận" },
   ];
   const [showTop, setShowTop] = React.useState(false);
 

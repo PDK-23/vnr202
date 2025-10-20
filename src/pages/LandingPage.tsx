@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 // ✅ Import đúng file đã convert sang H.264 + AAC
-import videoBg from "../assets/Tao_Video_Chibi_Cuoi_ua.mp4";
+import videoBg from "../assets/cach-mang-thang-8.jpg";
 
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
@@ -59,17 +59,11 @@ const LandingPage: React.FC = () => {
 
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video nền */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      >
-        <source src={videoBg} type="video/mp4" />
-      </video>
+      {/* Hình nền */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
+        style={{ backgroundImage: `url(${videoBg})` }}
+      />
 
       {/* Overlay mờ */}
       <div className="absolute inset-0 bg-black/60 z-10" />
@@ -94,7 +88,7 @@ const LandingPage: React.FC = () => {
               Chào mừng đến với VNR202
             </motion.h1>
             <motion.p
-              className="text-lg md:text-2xl text-white/90 mb-8 font-medium drop-shadow"
+              className="text-lg md:text-2xl max-w-[60%] text-white/90 mb-8 font-medium drop-shadow"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}

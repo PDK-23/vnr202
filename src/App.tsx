@@ -23,7 +23,7 @@ function App() {
               <Route path="/chatbot" element={<ChatbotPage />} />
               <Route path="/case-study" element={<CaseStudyPage />} />
               <Route path="/qa" element={<QAPage />} />
-              <Route path="/musicai" element={<Musicai />} />
+              <Route path="/video" element={<Musicai />} />
             </Routes>
           </div>
         </main>

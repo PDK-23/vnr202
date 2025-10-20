@@ -8,7 +8,7 @@ const menu = [
   { label: "Quiz", to: "/quiz" },
   // { label: "Chatbot", to: "/chatbot" },
   { label: "AI Usage Report", to: "/case-study" },
-  { label: "Music ", to: "/musicai" },
+  { label: "Video ", to: "/video" },
   // { label: "Q&A", to: "/qa" }, // Thêm Q & A vào menu
 ];
 

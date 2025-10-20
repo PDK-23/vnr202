@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa6"; 
 
 // Import AI images (assume these are in assets folder)
-import grokImage from "../assets/musicheroai.png"; 
+import grokImage from "../assets/notebooklm.png"; 
 import chatgptImage from "../assets/chatgptImage.webp";
 
 
@@ -48,7 +48,7 @@ const CaseStudyPage: React.FC = () => {
             </p>
             <ul className="list-disc space-y-2 pl-12 text-gray-700 mt-3">
               <li>
-                Cấu trúc & Thuật ngữ: Hỗ trợ dàn ý nội dung (Chương 7), chuẩn hóa thuật ngữ học thuật.
+                Cấu trúc & Thuật ngữ: Hỗ trợ dàn ý nội dung, chuẩn hóa thuật ngữ học thuật.
               </li>
               <li>
                 Tương tác : Gợi ý bộ câu hỏi Quiz.
@@ -156,10 +156,10 @@ const CaseStudyPage: React.FC = () => {
                   loading="lazy"
                 />
                 <h3 className="font-semibold text-gray-800 mb-1">
-                  MUCSICHERO AI
+                  NOTEBOOKLM
                 </h3>
                 <p className="text-sm text-gray-600 mt-auto">
-                  Hỗ trợ tạo giai điệu bài hát.
+                  Hỗ trợ tạo Video và Quiz.
                 </p>
               </div>
             </div>
