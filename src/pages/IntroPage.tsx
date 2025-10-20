@@ -456,7 +456,7 @@ const IntroPage: React.FC = () => {
               "Gia đình là tế bào của xã hội; là môi trường đầu tiên hình thành phẩm chất, đạo đức và năng lực công dân; là cầu nối giữa điều kiện vật chất và ý thức – văn hóa trong xã hội mới."
             </p>
             <p className="text-indigo-100 italic">
-              — Dựa trên Giáo trình MLN131, mục 1.2; Ăngghen về vai trò sản xuất – tái sản xuất; tư tưởng Hồ Chí Minh về gia đình.
+              — Dựa trên Giáo trình VNR202, mục 1.2; Ăngghen về vai trò sản xuất – tái sản xuất; tư tưởng Hồ Chí Minh về gia đình.
             </p>
           </div>
         </motion.div>

@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             className="w-18 h-9 rounded-l shadow-md bg-white/70 p-1"
           />
           <span className="text-2xl font-extrabold text-[#2a2e6e] tracking-wide hidden sm:block drop-shadow-lg">
-            MLN131
+            VNR202
           </span>
         </Link>
         <nav className="hidden md:flex gap-2 lg:gap-6">
@@ -34,11 +34,10 @@ const Header: React.FC = () => {
             <Link
               key={item.to}
               to={item.to}
-              className={`px-4 py-2 rounded-xl font-semibold transition text-[#2a2e6e] hover:bg-[#e0e7ff] hover:text-[#3a3f8f] shadow-sm backdrop-blur-md ${
-                location.pathname === item.to
+              className={`px-4 py-2 rounded-xl font-semibold transition text-[#2a2e6e] hover:bg-[#e0e7ff] hover:text-[#3a3f8f] shadow-sm backdrop-blur-md ${location.pathname === item.to
                   ? "bg-[#dbeafe] text-[#3a3f8f]"
                   : ""
-              }`}
+                }`}
               onClick={() => setOpen(false)}
             >
               {item.label}
@@ -74,11 +73,10 @@ const Header: React.FC = () => {
             <Link
               key={item.to}
               to={item.to}
-              className={`block px-4 py-3 rounded-xl font-semibold transition text-[#2a2e6e] hover:bg-[#e0e7ff] hover:text-[#3a3f8f] shadow-sm ${
-                location.pathname === item.to
+              className={`block px-4 py-3 rounded-xl font-semibold transition text-[#2a2e6e] hover:bg-[#e0e7ff] hover:text-[#3a3f8f] shadow-sm ${location.pathname === item.to
                   ? "bg-[#dbeafe] text-[#3a3f8f]"
                   : ""
-              }`}
+                }`}
               onClick={() => setOpen(false)}
             >
               {item.label}

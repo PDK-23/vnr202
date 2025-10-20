@@ -90,7 +90,7 @@ const LandingPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Chào mừng đến với MLN131
+              Chào mừng đến với VNR202
             </motion.h1>
             <motion.p
               className="text-lg md:text-2xl text-white/90 mb-8 font-medium drop-shadow"
@@ -98,7 +98,7 @@ const LandingPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-             Gia đình Việt Nam nhìn từ quan điểm Triết học Mác – Lênin về con người và đời sống xã hội
+              BẢN LĨNH VÀ SỰ SÁNG TẠO CỦA ĐẢNG CỘNG SẢN VIỆT NAM TRONG VIỆC CHUYỂN HƯỚNG CHỈ ĐẠO CÁCH MẠNG GIAI ĐOẠN 1939–1945
             </motion.p>
             <motion.button
               onClick={handleStart}
