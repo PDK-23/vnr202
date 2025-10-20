@@ -24,20 +24,21 @@ const LandingPage: React.FC = () => {
 
   const introSteps = [
     {
-      title: "Gia đình Việt Nam trong thời kỳ quá độ",
-      subtitle: "“Tế bào của xã hội” dưới ánh sáng duy vật biện chứng & lịch sử",
-      actionText: "Tiếp tục",
+      "title": "Bản lĩnh và Sự sáng tạo của Đảng Cộng sản Việt Nam",
+      "subtitle": "Chuyển hướng chỉ đạo cách mạng giai đoạn 1939–1945",
+      "actionText": "Tiếp tục"
     },
     {
-      title: "Mục tiêu học:",
-      listItems: [
-        "Cơ sở lý luận: Vật chất – ý thức, xã hội hóa, phát triển biện chứng",
-        "Thực tiễn VN: Ly hôn, bạo lực, áp lực kinh tế, ảnh hưởng mạng xã hội",
-        "Giải pháp: Bình đẳng giới, phối hợp gia đình – xã hội – Nhà nước",
-        "Vận dụng: Quiz & chỉ số đánh giá (M&E)",
+      "title": "Nội dung trình bày:",
+      "listItems": [
+        "Phân tích Bối cảnh Quốc tế và Trong nước, dẫn đến yêu cầu chuyển hướng chiến lược",
+        "Bản lĩnh Chính trị: Khẳng định giải phóng dân tộc là nhiệm vụ hàng đầu (Hội nghị TW 8/1941)",
+        "Sáng tạo trong Xây dựng Lực lượng: Thành lập Mặt trận Việt Minh và Điều chỉnh sách lược",
+        "Sáng tạo trong việc Chớp Thời cơ: Chỉ thị Nhật - Pháp bắn nhau và Quyết định Tổng khởi nghĩa",
+        "Tổng kết: Vai trò quyết định của Bản lĩnh và Sáng tạo đối với thắng lợi Cách mạng Tháng Tám"
       ],
-      actionText: "Bắt đầu học",
-    },
+      "actionText": "Bắt đầu học"
+    }
   ];
 
   const containerVariants = {
@@ -90,7 +91,7 @@ const LandingPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Chào mừng đến với MLN131
+              Chào mừng đến với VNR202
             </motion.h1>
             <motion.p
               className="text-lg md:text-2xl text-white/90 mb-8 font-medium drop-shadow"
@@ -98,7 +99,8 @@ const LandingPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-             Gia đình Việt Nam nhìn từ quan điểm Triết học Mác – Lênin về con người và đời sống xã hội
+              BẢN LĨNH VÀ SỰ SÁNG TẠO CỦA ĐẢNG CỘNG SẢN VIỆT NAM TRONG VIỆC CHUYỂN HƯỚNG
+              CHỈ ĐẠO CÁCH MẠNG GIAI ĐOẠN 1939–1945
             </motion.p>
             <motion.button
               onClick={handleStart}

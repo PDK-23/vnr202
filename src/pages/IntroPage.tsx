@@ -5,7 +5,6 @@ import type { Variants } from "framer-motion";
 // ===== ICONS =====
 import {
   FaQuoteLeft,
-  FaScaleBalanced,
   FaChartLine,
   FaLightbulb,
   FaChevronDown,
@@ -14,11 +13,7 @@ import {
   FaNewspaper,
   FaArrowUp,
   FaUsers,
-  FaHeart,
-  FaHandshake,
   FaGraduationCap,
-  FaHandBackFist,
-  FaShareNodes,
 } from "react-icons/fa6";
 
 // ===== ASSETS =====
@@ -311,52 +306,7 @@ const QuickNav: React.FC = () => {
   );
 };
 
-type CiteLink = { href: string; label: string };
-
-const toneStyles = {
-  red: { ring: "ring-red-100", badge: "bg-red-600/10 text-red-700", icon: "text-red-700" },
-  orange: { ring: "ring-orange-100", badge: "bg-orange-600/10 text-orange-700", icon: "text-orange-700" },
-  blue: { ring: "ring-blue-100", badge: "bg-blue-600/10 text-blue-700", icon: "text-blue-700" },
-  purple: { ring: "ring-purple-100", badge: "bg-purple-600/10 text-purple-700", icon: "text-purple-700" },
-};
-
-const LinkOut: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-1.5 underline underline-offset-4 decoration-indigo-300 hover:decoration-indigo-600 font-semibold text-indigo-600 hover:text-indigo-800 transition-all"
-  >
-    {children}
-    <FaUpRightFromSquare className="text-xs" />
-  </a>
-);
-
-
-const CiteBox: React.FC<{ tone: keyof typeof toneStyles; links: CiteLink[] }> = ({ tone, links }) => {
-  const c = toneStyles[tone];
-  return (
-    <div className={`mt-3 rounded-xl bg-white p-4 md:p-5 ring-1 ring-inset ${c.ring} shadow-sm`}>
-      <div className="flex items-center gap-2">
-        <span className={`inline-flex h-8 w-8 items-center justify-center rounded-lg ${c.badge} ring-1 ring-inset ${c.ring}`}>
-          <FaNewspaper className="text-base" />
-        </span>
-        <p className="text-[14px] md:text-base font-semibold text-slate-800">Nguồn tham khảo</p>
-      </div>
-
-      <ul className="mt-3 space-y-2">
-        {links.map((l) => (
-          <li key={l.href} className="group flex items-start gap-3">
-            <FaUpRightFromSquare className={`mt-1 shrink-0 ${c.icon}`} />
-            <div>
-              <LinkOut href={l.href}>{l.label}</LinkOut>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+// (Helper components for external citations were removed as they are unused in the IntroPage)
 
 
 // ====== MAIN PAGE COMPONENT ======
@@ -394,19 +344,20 @@ const IntroPage: React.FC = () => {
             variants={fadeInUp}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 font-semibold text-sm mb-6 shadow-md"
           >
-            <FaUsers /> Nghiên cứu triết học Mác – Lênin
+            <FaUsers /> Bài thuyết trình lịch sử
           </motion.span>
 
           <motion.h1
             variants={fadeInUp}
-            className="text-5xl md:text-7xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight mb-6 pb-3"
+            className="text-5xl md:text-6xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight mb-6 pb-3"
           >
-            Gia đình Việt Nam<br />trong thời kỳ quá độ
+            Bản lĩnh và sự sáng tạo của Đảng
+            <br />trong chuyển hướng chỉ đạo cách mạng (1939–1945)
           </motion.h1>
 
           <motion.p variants={fadeInUp} className="text-lg md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Từ quan điểm duy vật lịch sử, khám phá vai trò then chốt của gia đình
-            trong xây dựng con người mới và xã hội CNXH
+            Tóm tắt các quyết định chiến lược, bản lĩnh chính trị và những sáng tạo
+            của Đảng Cộng sản Việt Nam dẫn tới thắng lợi Cách mạng Tháng Tám 1945.
           </motion.p>
         </motion.div>
       </header>
@@ -415,9 +366,9 @@ const IntroPage: React.FC = () => {
       <section className="container mx-auto px-4 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {[
-            { icon: FaScaleBalanced, title: "Vật chất – Ý thức", desc: "Kết hợp điều kiện vật chất và giá trị văn hoá – đạo đức", delay: 0.4, colors: "from-blue-500 to-indigo-600", border: "border-indigo-100" },
-            { icon: FaHeart, title: "Bình đẳng – Hạnh phúc", desc: "Bảo đảm quyền con người và bình đẳng giới trong gia đình", delay: 0.5, colors: "from-purple-500 to-pink-600", border: "border-purple-100" },
-            { icon: FaHandshake, title: "Phối hợp – Liên kết", desc: "Gia đình – Xã hội – Nhà nước cùng trách nhiệm", delay: 0.6, colors: "from-pink-500 to-rose-600", border: "border-pink-100" },
+            { icon: FaUsers, title: "Lời mở đầu", desc: "Giai đoạn 1939–1945: thử thách và bước ngoặt quyết định dẫn tới Cách mạng Tháng Tám.", delay: 0.3, colors: "from-blue-500 to-indigo-600", border: "border-indigo-100" },
+            { icon: FaChartLine, title: "Sự chuyển hướng chiến lược", desc: "Hội nghị 11/1939, thay đổi nhiệm vụ tập trung giải phóng dân tộc, thành lập Mặt trận thống nhất.", delay: 0.4, colors: "from-purple-500 to-pink-600", border: "border-purple-100" },
+            { icon: FaLightbulb, title: "Bản lĩnh & Sáng tạo", desc: "Từ Hội nghị 5/1941 đến chớp thời cơ Tổng khởi nghĩa Tháng Tám 1945.", delay: 0.5, colors: "from-pink-500 to-rose-600", border: "border-pink-100" },
           ].map(card => (
             <motion.div
               key={card.title}
@@ -453,10 +404,10 @@ const IntroPage: React.FC = () => {
           <div className="relative">
             <FaQuoteLeft className="text-5xl mb-4 opacity-50" />
             <p className="text-xl md:text-2xl font-semibold leading-relaxed mb-6">
-              "Gia đình là tế bào của xã hội; là môi trường đầu tiên hình thành phẩm chất, đạo đức và năng lực công dân; là cầu nối giữa điều kiện vật chất và ý thức – văn hóa trong xã hội mới."
+              "Thắng lợi của Cách mạng Tháng Tám 1945 là minh chứng cho bản lĩnh chính trị độc lập, tự chủ và sự sáng tạo của Đảng Cộng sản Việt Nam."
             </p>
             <p className="text-indigo-100 italic">
-              — Dựa trên Giáo trình MLN131, mục 1.2; Ăngghen về vai trò sản xuất – tái sản xuất; tư tưởng Hồ Chí Minh về gia đình.
+              — Trích: Bài thuyết trình "Bản lĩnh và sự sáng tạo của Đảng" (1939–1945)
             </p>
           </div>
         </motion.div>
@@ -465,275 +416,115 @@ const IntroPage: React.FC = () => {
       {/* Main Content Sections */}
       <main className="container mx-auto px-4 py-12 space-y-8">
         <Collapsible
-          idAnchor="coso"
-          title="Cơ sở lý luận triết học"
-          subtitle="Các nguyên lý nền tảng theo quan điểm Mác – Lênin"
-          icon={<FaScaleBalanced />}
+          idAnchor="loimo"
+          title="LỜI MỞ ĐẦU"
+          subtitle="Giai đoạn 1939–1945: thử thách và bước ngoặt lịch sử"
+          icon={<FaUsers />}
           defaultOpen
         >
-          <div className="bg-green-600"></div>
-          <div className="bg-pink-600"></div>
-          <div className="space-y-6">
-            {[
-              { title: "Quan hệ vật chất – ý thức", items: ["<b>Nền tảng vật chất</b> (điều kiện lao động, thu nhập,...) quy định khả năng khách quan.", "<b>Ý thức xã hội</b> (giá trị, chuẩn mực,...) định hướng hành vi, tạo đồng thuận.", "<b>Tính thống nhất biện chứng:</b> vật chất là điều kiện cần; ý thức – đạo đức là điều kiện đủ."], color: "indigo" },
-              { title: "Con người – xã hội: môi trường xã hội hóa", items: ["<b>Chức năng gia đình:</b> tái sản xuất, giáo dục, kinh tế, văn hoá, chăm sóc.", "<b>Con người</b> là chủ thể, mục tiêu & động lực; gia đình nuôi dưỡng năng lực chủ thể."], color: "green" },
-              { title: "Sự phát triển biện chứng của gia đình", items: ["Cấu trúc & vai trò gia đình biến đổi theo trình độ lực lượng sản xuất.", "Gia đình Việt Nam tiếp thu giá trị hiện đại đồng thời kế thừa bản sắc dân tộc."], color: "pink" },
-            ].map((section, index) => (
-              <div key={section.title} className={`bg-gradient-to-r from-${section.color}-50 to-gray-50 rounded-2xl p-6 border-l-4 border-${section.color}-600`}>
-                <h4 className="font-bold text-gray-900 text-lg flex items-center gap-3 mb-3">
-                  <span className={`w-8 h-8 rounded-lg bg-${section.color}-600 text-white flex items-center justify-center text-sm font-bold`}>{index + 1}</span>
-                  {section.title}
-                </h4>
-                <ul className="space-y-3 text-gray-700">
-                  {section.items.map(item => (
-                    <li key={item} className="flex gap-3">
-                      <span className={`text-${section.color}-600 mt-1`}>•</span>
-                      <span dangerouslySetInnerHTML={{ __html: item }} />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="space-y-4">
+            <p>
+              Giai đoạn 1939–1945 là một trong những giai đoạn thử thách khốc liệt
+              nhưng cũng là thời kỳ rực rỡ nhất, đánh dấu bước ngoặt lịch sử vĩ đại của
+              cách mạng Việt Nam. Thành công của Cách mạng Tháng Tám 1945 khẳng định
+              Đảng Cộng sản Việt Nam là tổ chức duy nhất có khả năng lãnh đạo sự nghiệp
+              giải phóng dân tộc tại một nước thuộc địa nửa phong kiến.
+            </p>
+            <p>
+              Sự thắng lợi đó là minh chứng cho bản lĩnh chính trị độc lập, tự chủ
+              và trí tuệ sáng tạo của Đảng trong việc chuyển hướng chỉ đạo chiến
+              lược cách mạng.
+            </p>
           </div>
         </Collapsible>
 
         <Collapsible
-          idAnchor="thuctien"
-          title="Thực tiễn Việt Nam hiện nay"
-          subtitle="Những vấn đề nổi bật và thách thức đương đại"
-          icon={<FaChartLine />}>
-          <div className="space-y-6">
-            <div className="rounded-2xl bg-red-50 border border-red-100 shadow-sm p-6 md:p-7">
-              <div className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-xl bg-red-600/10 text-red-700 ring-1 ring-inset ring-red-600/20">
-                  <FaUsers className="h-4 w-4" />
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-lg md:text-xl font-semibold text-red-800">
-                    Ly hôn gia tăng
-                  </h4>
+          idAnchor="chuyenhuong"
+          title="I. SỰ CHUYỂN HƯỚNG CHIẾN LƯỢC"
+          subtitle="Yêu cầu của lịch sử (1939–1945)"
+          icon={<FaChartLine />}
+        >
+          <div className="space-y-4">
+            <h4 className="font-bold">1. Bối cảnh quốc tế và trong nước</h4>
+            <ul className="list-disc list-inside ml-4 space-y-2">
+              <li>Quốc tế: Chiến tranh thế giới thứ hai bùng nổ (9/1939), làm thay đổi cán cân lực lượng toàn cầu.</li>
+              <li>Trong nước: Thực dân Pháp đàn áp phong trào, Nhật Bản xâm nhập Đông Dương (9/1940) tạo ra tình trạng "một cổ hai tròng"; mâu thuẫn chủ yếu trở thành mâu thuẫn giữa toàn thể dân tộc Việt Nam và các lực lượng xâm lược.</li>
+            </ul>
 
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-red-700 ring-1 ring-red-200">
-                      40–44 tuổi
-                    </span>
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-red-700 ring-1 ring-red-200">
-                      ~60% ly hôn trong 1 - 5 năm
-                    </span>
-                  </div>
-
-                  <ul className="mt-3 list-disc space-y-1.5 pl-5 text-base leading-relaxed text-gray-800">
-                    <li>Độ tuổi người Việt ly hôn cao nhất là 40-44.</li>
-                    <li>Nghiên cứu Viện Nghiên cứu Gia đình & Giới: ~60% vụ ly hôn sau 1 - 5 năm chung sống.</li>
-                    <li>Nguyên nhân chính: xung đột vai trò giữa công việc – thu nhập – chăm sóc con nhỏ.</li>
-                  </ul>
-
-                  <CiteBox
-                    tone="red"
-                    links={[
-                      {
-                        href: "https://nld.com.vn/hon-22-trieu-nguoi-ly-hon-ly-than-tinh-thanh-nao-cao-nhat-196250301165652065.htm",
-                        label: "Hơn 2,2 triệu người ly hôn/ly thân: tỉnh thành nào cao nhất?",
-                      },
-                      {
-                        href: "https://tuoitre.vn/ly-hon-xanh-ao-at-vi-dau-20240802231610047.htm?gidzl=3qY8HHMXGaSEK8z56BPAH0jQWqW6uHaPGmVTJGRXH1f0N8mOLB5471PUZH4Dk10H7mFU46CZt_mr7g5DGW",
-                        label: "'Ly hôn xanh' ào ạt, vì đâu?",
-                      },
-                    ]}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-2xl bg-orange-50 border border-orange-100 shadow-sm p-6 md:p-7">
-              <div className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-xl bg-orange-600/10 text-orange-700 ring-1 ring-inset ring-orange-600/20">
-                  <FaHandBackFist className="h-4 w-4" />
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-lg md:text-xl font-semibold text-orange-800">
-                    Bạo lực gia đình chuyển dạng
-                  </h4>
-
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-orange-700 ring-1 ring-orange-200">
-                      30.000 vụ mỗi năm
-                    </span>
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-orange-700 ring-1 ring-orange-200">
-                      Nhận diện “bạo lực kinh tế”
-                    </span>
-                  </div>
-
-                  <ul className="mt-3 list-disc space-y-1.5 pl-5 text-base leading-relaxed text-gray-800">
-                    <li>Không chỉ thể chất mà còn tinh thần, kiểm soát trên mạng xã hội, bạo lực kinh tế.</li>
-                    <li>Theo thống kê từ Bộ Văn hóa, Thể thao và Du lịch (VH,TT&DL), Việt Nam vẫn ghi nhận hơn 30.000 vụ bạo lực gia đình mỗi năm.</li>
-                    <li>“Bạo lực kinh tế”: kiểm soát thu nhập, cấm đoán chi tiêu… (Hội LHPN Việt Nam).</li>
-                  </ul>
-
-                  <CiteBox
-                    tone="orange"
-                    links={[
-                      {
-                        href: "https://baophapluat.vn/bao-luc-gia-dinh-thoi-so-hoa-thach-thuc-moi-giai-phap-moi.html",
-                        label: "Bạo lực gia đình thời số hóa: Thách thức mới - Giải pháp mới",
-                      },
-                      {
-                        href: "https://vwu.vn/web/guest/tin-chi-tiet/-/chi-tiet/cac-nhom-bao-luc-gia-%C4%91inh-nguyen-nhan-49367-7.html",
-                        label: "Các nhóm bạo lực gia đình & nguyên nhân (Hội LHPN Việt Nam)",
-                      },
-                    ]}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-2xl bg-blue-50 border border-blue-100 shadow-sm p-6 md:p-7">
-              <div className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600/10 text-blue-700 ring-1 ring-inset ring-blue-600/20">
-                  <FaGraduationCap className="h-4 w-4" />
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-lg md:text-xl font-semibold text-blue-800">
-                    Áp lực kinh tế – nhà ở – dịch vụ chăm sóc
-                  </h4>
-
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-blue-700 ring-1 ring-blue-200">
-                      Chi phí NCT 7–10×
-                    </span>
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-blue-700 ring-1 ring-blue-200">
-                      Tầng lớp “sandwich”
-                    </span>
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-blue-700 ring-1 ring-blue-200">
-                      Mục tiêu 2030: 100% khám định kỳ
-                    </span>
-                  </div>
-
-                  <ul className="mt-3 list-disc space-y-1.5 pl-5 text-base leading-relaxed text-gray-800">
-                    <li>Áp lực kinh tế, nhà ở, dịch vụ chăm sóc làm giảm chất lượng thời gian gia đình.</li>
-                    <li>Chi phí y tế & chăm sóc người cao tuổi cao gấp 7–10 lần so với người trẻ (báo Đầu tư).</li>
-                    <li>“Sandwich”: vừa nuôi con nhỏ, vừa chăm cha mẹ già → gánh nặng thời gian – tài chính.</li>
-                    <li>Chương trình 2030: 100% NCT khám sức khỏe định kỳ; 50% xã/phường có mô hình chăm sóc ban ngày.</li>
-                  </ul>
-
-                  <CiteBox
-                    tone="blue"
-                    links={[
-                      {
-                        href: "https://baodautu.vn/ap-luc-kinh-te-va-chi-phi-y-te-cua-gia-hoa-dan-so-d202825.html",
-                        label: "Áp lực kinh tế & chi phí y tế của già hoá dân số (Báo Đầu tư)",
-                      },
-                      {
-                        href: "https://vhu.edu.vn/Resources/Docs/SubDomain/xhtt/2021/Th%E1%BB%B1c%20tr%E1%BA%A1ng%20v%C3%A0%20gi%E1%BA%A3i%20ph%C3%A1p%20ch%C4%83m%20s%C3%B3c%20ng%C6%B0%E1%BB%9Di%20cao%20tu%E1%BB%95i%20%E1%BB%9F%20Vi%E1%BB%87t%20Nam%20hi%E1%BB%87n%20nay.pdf",
-                        label: "Thực trạng & giải pháp chăm sóc người cao tuổi ở Việt Nam (PDF)",
-                      },
-                    ]}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-2xl bg-purple-50 border border-purple-100 shadow-sm p-6 md:p-7">
-              <div className="flex items-start gap-3">
-                <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-xl bg-purple-600/10 text-purple-700 ring-1 ring-inset ring-purple-600/20">
-                  <FaShareNodes className="h-4 w-4" />
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-lg md:text-xl font-semibold text-purple-800">
-                    Ảnh hưởng mạng xã hội
-                  </h4>
-
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-purple-700 ring-1 ring-purple-200">
-                      76,95 triệu người dùng (~78,1%)
-                    </span>
-                    <span className="inline-flex items-center rounded-full bg-white px-2 md:px-3 py-0.5 text-xs md:text-sm font-medium text-purple-700 ring-1 ring-purple-200">
-                      &gt;60% TTN gặp nội dung không lành mạnh
-                    </span>
-                  </div>
-
-                  <ul className="mt-3 list-disc space-y-1.5 pl-5 text-base leading-relaxed text-gray-800">
-                    <li>Lan truyền chuẩn mực tiêu dùng & hình ảnh “chuẩn hóa” → so sánh bất lợi, khủng hoảng giá trị ở một bộ phận thanh thiếu niên.</li>
-                    <li>Tác động đến nhận thức xã hội qua 3 kênh: niềm tin – thái độ cộng đồng – kiến thức.</li>
-                  </ul>
-
-                  <CiteBox
-                    tone="purple"
-                    links={[
-                      {
-                        href: "https://scholar.dlu.edu.vn/thuvienso/bitstream/DLU123456789/209913/1/CVv39S212023087.pdf",
-                        label: "Ảnh hưởng của mạng xã hội đến nhận thức xã hội (tài liệu học thuật)",
-                      },
-                      {
-                        href: "https://baodantoc.vn/lan-song-den-tren-mang-xa-hoi-nguy-co-kho-luong-va-giai-phap-ngan-chan-1740716792922.htm",
-                        label: "“Làn sóng đen” trên mạng xã hội: nguy cơ & giải pháp",
-                      },
-                      {
-                        href: "https://thanhnienviet.vn/thanh-nien-the-he-z-truoc-su-phat-trien-cua-mang-xa-hoi-o-viet-nam-hien-nay-209241001111330009.htm",
-                        label: "Thế hệ Z & mạng xã hội ở Việt Nam hiện nay",
-                      },
-                    ]}
-                  />
-                </div>
-              </div>
-            </div>
+            <h4 className="font-bold">2. Hội nghị Trung ương 11/1939</h4>
+            <p>
+              Hội nghị Ban Chấp hành Trung ương tháng 11/1939 (Bà Điểm) khẳng
+              định nhiệm vụ hàng đầu là giải phóng dân tộc, chủ trương thành lập
+              Mặt trận dân tộc thống nhất phản đế Đông Dương và tạm gác một số
+              khẩu hiệu để tập trung lực lượng chống đế quốc.
+            </p>
           </div>
         </Collapsible>
 
         <Collapsible
-          idAnchor="giaiphap"
-          title="Giải pháp triết học"
-          subtitle="Định hướng chính sách và hành vi từ tư duy biện chứng"
+          idAnchor="banlinh"
+          title="II. BẢN LĨNH CHÍNH TRỊ"
+          subtitle="Bản lĩnh độc lập, tự chủ và quyết đoán"
           icon={<FaLightbulb />}
         >
-          <div className="space-y-6">
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 border-l-4 border-green-600">
-              <h4 className="font-bold text-gray-900 text-lg flex items-center gap-3 mb-3">
-                <FaGraduationCap className="text-green-600 text-xl" />
-                Tư duy biện chứng về nguyên nhân – điều kiện – giải pháp
-              </h4>
-              <ul className="list-disc list-inside space-y-2 mt-2">
-                <li><b>Nguyên nhân gốc:</b>  Mâu thuẫn giữa kỳ vọng vai trò (giới, kinh tế, cảm xúc) với điều kiện vật chất – thể chế chưa tương thích; hiểu biết pháp luật – bình đẳng giới còn hạn chế.
-                </li>
-                <li><b>Điều kiện bảo đảm:</b> Hoàn thiện pháp luật và dịch vụ công (tư vấn, bảo vệ khẩn cấp); nâng cao dân trí số và đạo đức số; củng cố phong trào “gia đình văn hóa”.
-                </li>
-                <li><b>Giải pháp tổng hợp:</b> Kết hợp vật chất (an sinh, dịch vụ chăm sóc, nhà ở) với tinh thần (giá trị, pháp luật, văn hóa) để giải quyết đồng bộ.
-                </li>
-              </ul>
-            </div>
-            <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-6 border-l-4 border-pink-600">
-              <h4 className="font-bold text-gray-900 text-lg flex items-center gap-3 mb-3">
-                <FaHeart className="text-pink-600 text-xl" />
-                Bình đẳng giới – hạnh phúc gia đình
-              </h4>
-              <ul className="list-disc list-inside space-y-2 mt-2">
-                <li><b>Tái phân công</b> lao động gia đình theo nguyên tắc công bằng; ghi nhận công việc chăm sóc như một đóng góp kinh tế – xã hội.</li>
-                <li><b>Giáo dục kỹ năng giao tiếp bất bạo lực</b>, quản trị cảm xúc, thỏa thuận tài chính minh bạch.</li>
-                <li><b>Phát triển các lớp “làm cha tích cực”</b> , nhấn mạnh trách nhiệm, kỷ luật, nêu gương.</li>
-              </ul>
-            </div>
-            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border-l-4 border-indigo-600">
-              <h4 className="font-bold text-gray-900 text-lg flex items-center gap-3 mb-3">
-                <FaHandshake className="text-indigo-600 text-xl" />
-                Gia đình – xã hội – Nhà nước: cơ chế phối hợp
-              </h4>
-              <ul className="list-disc list-inside space-y-2 mt-2">
-                <li><b>Nhà nước:</b>  Pháp luật phòng, chống bạo lực gia đình; chính sách thai sản, dịch vụ trông trẻ; tư vấn hôn nhân – gia đình; bảo vệ dữ liệu cá nhân.</li>
-                <li><b>Xã hội:</b> Trường học, đoàn thể, tôn giáo, truyền thông kiến tạo môi trường văn hóa số lành mạnh.</li>
-                <li><b>Gia đình:</b> Xây dựng quy ước “5 tôn trọng” (pháp luật, quyền riêng tư, thời gian chung, ngôn từ giao tiếp, thỏa thuận tài chính), thực hành “3 không” (không bạo lực, không định kiến giới, không im lặng).</li>
-              </ul>
-            </div>
-            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border-l-4 border-indigo-600">
-              <h4 className="font-bold text-gray-900 text-lg flex items-center gap-3 mb-3">
-                <FaHandBackFist className="text-indigo-600 text-xl" />
-                Liên hệ với ví dụ cụ thể (Kiểm soát công nghệ)
-              </h4>
-              <ul className="list-disc list-inside space-y-2 mt-2">
-                <li>Thiết lập quy tắc gia đình về quyền riêng tư số và thời gian không thiết bị; dùng công cụ kiểm soát của chính mỗi người (giới hạn thời gian, không bắt buộc chia sẻ mật khẩu).</li>
-                <li>Kênh trợ giúp: điểm tư vấn cộng đồng, tổ hòa giải; khi có nguy cơ bạo lực, áp dụng lệnh bảo vệ khẩn cấp.</li>
-                <li>Chỉ số đánh giá: giảm tần suất yêu cầu mật khẩu/kiểm tra điện thoại; tăng số cặp đôi ký cam kết “an toàn số”.</li>
-              </ul>
-            </div>
+          <div className="space-y-4">
+            <h4 className="font-bold">Những điểm chính</h4>
+            <ul className="list-disc list-inside ml-4 space-y-2">
+              <li>Hội nghị Trung ương lần thứ 8 (5/1941) do Nguyễn Ái Quốc chủ trì khẳng định nhiệm vụ giải phóng dân tộc là ưu tiên hàng đầu.</li>
+              <li>Nguyên tắc: Quyền lợi của bộ phận, của giai cấp phải phục tùng quyền lợi của toàn thể dân tộc.</li>
+              <li>Ra quyết định kịp thời sau Nhật đảo chính Pháp (3/1945) với Chỉ thị "Nhật – Pháp bắn nhau và hành động của chúng ta" — thể hiện bản lĩnh dự đoán và hành động nhanh nhạy.</li>
+            </ul>
+          </div>
+        </Collapsible>
+
+        <Collapsible
+          idAnchor="sangtao"
+          title="III. SỰ SÁNG TẠO"
+          subtitle="Sáng tạo về đường lối, sách lược và phương pháp" 
+          icon={<FaLightbulb />}
+        >
+          <div className="space-y-4">
+            <h4 className="font-bold">Các sáng tạo nổi bật</h4>
+            <ul className="list-disc list-inside ml-4 space-y-2">
+              <li>Thành lập Mặt trận Việt Nam Độc lập Đồng minh (Việt Minh) để tập hợp rộng rãi mọi lực lượng yêu nước.</li>
+              <li>Điều chỉnh chính sách ruộng đất (giảm tô, giảm tức; tịch thu tài sản địch và chia cho dân cày nghèo) để mở rộng liên minh dân tộc.</li>
+              <li>Chuẩn bị lực lượng vũ trang và xây dựng căn cứ địa; thành lập Đội Việt Nam Tuyên truyền Giải phóng quân (12/1944).</li>
+              <li>Chớp thời cơ Tổng khởi nghĩa Tháng Tám 1945: quyết định kịp thời tại Hội nghị Tân Trào (14–15/8/1945) để giành chính quyền trước khi quân Đồng minh vào Đông Dương.</li>
+            </ul>
+          </div>
+        </Collapsible>
+
+        <Collapsible
+          idAnchor="cq"
+          title="TRẢ LỜI CÂU HỎI CHUYÊN ĐỀ (CQ)"
+          subtitle="Bản lĩnh và sự sáng tạo của Đảng trong chuyển hướng chỉ đạo cách mạng 1939–1945"
+          icon={<FaGraduationCap />}
+        >
+          <div className="space-y-4">
+            <p className="font-semibold">Câu hỏi chuyên đề (CQ): Bản lĩnh và sự sáng tạo của Đảng Cộng sản Việt Nam được thể hiện như thế nào trong việc chuyển hướng chỉ đạo cách mạng giai đoạn 1939–1945?</p>
+
+            <ol className="list-decimal list-inside ml-4 space-y-2">
+              <li>
+                <strong>Bản lĩnh chính trị (Tính độc lập, tự chủ và quyết đoán):</strong>
+                <ul className="list-disc list-inside ml-4">
+                  <li>Đảng kiên định giương cao ngọn cờ giải phóng dân tộc (Hội nghị Trung ương 8, 5/1941), khắc phục hạn chế khuynh hướng giai cấp trước đó.</li>
+                  <li>Đặt lợi ích dân tộc lên trên hết và quyết đoán trong thay đổi sách lược (Chỉ thị Nhật–Pháp bắn nhau, 3/1945) để xác định đúng kẻ thù và chuẩn bị lực lượng cho Tổng khởi nghĩa.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Sự sáng tạo trong chiến lược và phương pháp (Tính linh hoạt):</strong>
+                <ul className="list-disc list-inside ml-4">
+                  <li>Sáng tạo trong xây dựng lực lượng: thành lập Mặt trận Việt Minh để thực hiện đại đoàn kết toàn dân tộc và mở rộng liên minh.</li>
+                  <li>Sáng tạo trong phương pháp: kết hợp đấu tranh chính trị với đấu tranh vũ trang, khởi nghĩa từng phần tiến tới Tổng khởi nghĩa toàn quốc.</li>
+                  <li>Sáng tạo trong chớp thời cơ: nhận định chính xác thời cơ (tháng 8/1945) và tiến hành Tổng khởi nghĩa kịp thời.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Kết luận:</strong> Thắng lợi của Cách mạng Tháng Tám 1945 là minh chứng rõ rệt cho khả năng lãnh đạo, bản lĩnh và sự sáng tạo của Đảng trong việc chuyển hướng chiến lược, phù hợp với điều kiện lịch sử ở Việt Nam.
+              </li>
+            </ol>
           </div>
         </Collapsible>
 
@@ -771,7 +562,7 @@ const IntroPage: React.FC = () => {
         </section>
 
         {/* Conclusion */}
-        <section
+        {/* <section
           id="ketluan"
           className="relative text-center bg-gradient-to-br from-indigo-600 to-purple-700 text-white rounded-3xl shadow-2xl p-8 md:p-12 overflow-hidden"
         >
@@ -790,7 +581,7 @@ const IntroPage: React.FC = () => {
               giúp chuyển hoá lý luận thành thay đổi hành vi cụ thể.
             </p>
           </div>
-        </section>
+        </section> */}
 
 
       </main>
