@@ -16,283 +16,320 @@ interface QuizQuestion {
 const questions: QuizQuestion[] = [
   {
     questionNumber: 1,
-    question: "Quan điểm nào phản ánh đúng lập trường duy vật lịch sử về gia đình?",
+    question:
+      "Mâu thuẫn chủ yếu và gay gắt nhất trong xã hội Việt Nam đòi hỏi Đảng phải thay đổi chiến lược trong giai đoạn 1939–1945 là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Gia đình là thiết chế bất biến, không chịu tác động của phương thức sản xuất.",
-        rationale: "Gia đình biến đổi theo phương thức sản xuất và quan hệ sở hữu; không bất biến.",
+        text: "Giữa giai cấp công nhân và giai cấp tư sản.",
+        rationale:
+          "Đây là mâu thuẫn giai cấp, không phải mâu thuẫn cơ bản chi phối toàn xã hội thời kỳ này.",
         isCorrect: false,
       },
       {
-        text: "Cấu trúc và chức năng gia đình biến đổi theo lực lượng sản xuất và quan hệ sở hữu.",
-        rationale: "Gia đình biến đổi theo phương thức sản xuất và quan hệ sở hữu; không bất biến.",
+        text: "Giữa toàn thể dân tộc Việt Nam với giai cấp địa chủ phong kiến.",
+        rationale:
+          "Mâu thuẫn này tồn tại nhưng không phải là mâu thuẫn chủ yếu trong bối cảnh bị xâm lược.",
+        isCorrect: false,
+      },
+      {
+        text: "Giữa giai cấp nông dân và địa chủ.",
+        rationale:
+          "Đây là mâu thuẫn về lợi ích giai cấp trong nông thôn, không phải mâu thuẫn quyết định chiến lược cách mạng giai đoạn 1939–1945.",
+        isCorrect: false,
+      },
+      {
+        text: "Giữa toàn thể dân tộc Việt Nam với đế quốc Pháp và phát xít Nhật.",
+        rationale:
+          "Đúng. Đây là mâu thuẫn dân tộc cơ bản, quyết định nhiệm vụ trung tâm là giải phóng dân tộc.",
         isCorrect: true,
       },
-      {
-        text: "Gia đình chỉ do ý thức, truyền thống quyết định.",
-        rationale: "Gia đình biến đổi theo phương thức sản xuất và quan hệ sở hữu; không bất biến.",
-        isCorrect: false,
-      },
-      {
-        text: "Gia đình không liên quan đến các thiết chế xã hội khác.",
-        rationale: "Gia đình biến đổi theo phương thức sản xuất và quan hệ sở hữu; không bất biến.",
-        isCorrect: false,
-      },
     ],
-    hint: "Nghĩ về sự biến đổi của gia đình theo điều kiện kinh tế - xã hội.",
+    hint: "Hãy nhớ bối cảnh nước ta bị Pháp thống trị và Nhật xâm lược.",
   },
   {
     questionNumber: 2,
-    question: "Chức năng không thuộc về gia đình trong xã hội mới theo tinh thần CNXHKH là:",
+    question:
+      "Hội nghị nào của Ban Chấp hành Trung ương Đảng được coi là đỉnh cao của bản lĩnh chính trị, khẳng định dứt khoát giải phóng dân tộc là nhiệm vụ cấp thiết nhất?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Tái sản xuất con người.",
-        rationale: "Trấn áp bằng cưỡng chế là chức năng của Nhà nước, không phải chức năng gia đình.",
+        text: "Hội nghị Trung ương tháng 11/1939 (Bà Điểm).",
+        rationale:
+          "Hội nghị này mở đầu sự chuyển hướng, nhưng chưa xác định triệt để nhiệm vụ dân tộc giải phóng.",
         isCorrect: false,
       },
       {
-        text: "Giáo dục – xã hội hóa thế hệ trẻ.",
-        rationale: "Trấn áp bằng cưỡng chế là chức năng của Nhà nước, không phải chức năng gia đình.",
+        text: "Hội nghị Trung ương tháng 7/1936.",
+        rationale:
+          "Hội nghị này tập trung vào phong trào dân chủ, chưa đặt nhiệm vụ giải phóng dân tộc lên hàng đầu.",
         isCorrect: false,
       },
       {
-        text: "Trấn áp bằng quyền lực cưỡng chế nhà nước.",
-        rationale: "Trấn áp bằng cưỡng chế là chức năng của Nhà nước, không phải chức năng gia đình.",
+        text: "Hội nghị Trung ương lần thứ 8 (tháng 5/1941) ở Cao Bằng.",
+        rationale:
+          "Đúng. Hội nghị Trung ương 8 là đỉnh cao chuyển hướng, xác định giải phóng dân tộc là nhiệm vụ trung tâm.",
         isCorrect: true,
       },
       {
-        text: "Chăm sóc – phúc lợi, văn hóa – tinh thần.",
-        rationale: "Trấn áp bằng cưỡng chế là chức năng của Nhà nước, không phải chức năng gia đình.",
+        text: "Hội nghị toàn quốc của Đảng (8/1945).",
+        rationale:
+          "Hội nghị này chuẩn bị cho Tổng khởi nghĩa, không phải nơi khẳng định bước chuyển chiến lược.",
         isCorrect: false,
       },
     ],
-    hint: "Chức năng gia đình tập trung vào tái sản xuất và giáo dục, không phải cưỡng chế.",
+    hint: "Hội nghị này do Nguyễn Ái Quốc chủ trì tại Pác Bó.",
   },
   {
     questionNumber: 3,
-    question: "Tiêu chí cốt lõi của “hạnh phúc gia đình” theo định hướng XHCN là:",
+    question:
+      "Sự sáng tạo lớn nhất của Đảng trong việc xây dựng khối đại đoàn kết toàn dân tộc giai đoạn này là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Tích lũy tư bản cá nhân tối đa.",
-        rationale: "Bình đẳng giới, tôn trọng, trách nhiệm theo pháp luật là tiêu chí cốt lõi của hạnh phúc gia đình XHCN.",
+        text: "Khôi phục lại phong trào Xô viết Nghệ Tĩnh.",
+        rationale:
+          "Đây là phong trào cách mạng trước đó, không phải hình thức tập hợp mới.",
         isCorrect: false,
       },
       {
-        text: "Bình đẳng giới, tôn trọng và trách nhiệm theo pháp luật.",
-        rationale: "Bình đẳng giới, tôn trọng, trách nhiệm theo pháp luật là tiêu chí cốt lõi của hạnh phúc gia đình XHCN.",
+        text: "Thành lập Mặt trận Dân chủ Đông Dương.",
+        rationale:
+          "Mặt trận này ra đời giai đoạn 1936–1939, không phải sáng tạo lớn nhất trong thời kỳ 1939–1945.",
+        isCorrect: false,
+      },
+      {
+        text: "Thành lập Mặt trận Việt Nam Độc lập Đồng minh (Việt Minh).",
+        rationale:
+          "Đúng. Việt Minh là hình thức tập hợp sáng tạo, gắn với mục tiêu giải phóng dân tộc.",
         isCorrect: true,
       },
       {
-        text: "Tách gia đình khỏi các ràng buộc xã hội.",
-        rationale: "Bình đẳng giới, tôn trọng, trách nhiệm theo pháp luật là tiêu chí cốt lõi của hạnh phúc gia đình XHCN.",
-        isCorrect: false,
-      },
-      {
-        text: "Cấm sử dụng công nghệ và mạng xã hội.",
-        rationale: "Bình đẳng giới, tôn trọng, trách nhiệm theo pháp luật là tiêu chí cốt lõi của hạnh phúc gia đình XHCN.",
+        text: "Tổ chức các đội du kích Bắc Sơn.",
+        rationale:
+          "Đây là hoạt động quân sự, không phải tổ chức chính trị đại đoàn kết toàn dân.",
         isCorrect: false,
       },
     ],
-    hint: "Hạnh phúc gia đình gắn với bình đẳng và trách nhiệm xã hội chủ nghĩa.",
+    hint: "Tổ chức này do Nguyễn Ái Quốc sáng lập năm 1941.",
   },
   {
     questionNumber: 4,
-    question: "Một hộ gia đình tăng thu nhập đáng kể, nhưng xung đột vẫn gia tăng. Cách lý giải đúng theo quan hệ vật chất – ý thức là:",
+    question:
+      "Để mở rộng Mặt trận dân tộc thống nhất, Đảng đã có sự chuyển hướng chiến lược nào về cách mạng ruộng đất tại Hội nghị Trung ương (5/1941)?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Vật chất quyết định tuyệt đối nên mâu thuẫn sẽ tự hết.",
-        rationale: "Vật chất là điều kiện cần; ý thức/giá trị/kỹ năng và pháp luật là điều kiện đủ để bền vững.",
+        text: "Quyết định hoàn thành cách mạng ruộng đất ngay trong thời gian kháng chiến.",
+        rationale: "Điều này chưa phù hợp với mục tiêu cấp bách lúc bấy giờ.",
         isCorrect: false,
       },
       {
-        text: "Ý thức quyết định tuyệt đối nên chỉ cần tuyên truyền là đủ.",
-        rationale: "Vật chất là điều kiện cần; ý thức/giá trị/kỹ năng và pháp luật là điều kiện đủ để bền vững.",
+        text: "Tạm thời xóa bỏ hoàn toàn vấn đề ruộng đất để tập trung vào mục tiêu dân tộc.",
+        rationale:
+          "Sai, Đảng không xóa bỏ mà chỉ tạm gác khẩu hiệu để tập trung giải phóng dân tộc.",
         isCorrect: false,
       },
       {
-        text: "Vật chất là điều kiện cần; cần đồng thời giáo dục giá trị, kỹ năng giao tiếp, kỷ luật pháp luật để tạo ổn định bền vững.",
-        rationale: "Vật chất là điều kiện cần; ý thức/giá trị/kỹ năng và pháp luật là điều kiện đủ để bền vững.",
+        text: "Tạm gác khẩu hiệu 'cách mạng ruộng đất', thay bằng khẩu hiệu giảm tô, giảm tức và tịch thu ruộng đất của đế quốc, Việt gian chia cho dân cày nghèo.",
+        rationale:
+          "Đúng. Đây là chủ trương mềm dẻo, phù hợp yêu cầu đoàn kết dân tộc.",
         isCorrect: true,
       },
       {
-        text: "Không thể lý giải bằng lý luận biện chứng.",
-        rationale: "Vật chất là điều kiện cần; ý thức/giá trị/kỹ năng và pháp luật là điều kiện đủ để bền vững.",
+        text: "Vẫn giữ nguyên khẩu hiệu 'Người cày có ruộng'.",
+        rationale:
+          "Không phù hợp với giai đoạn trước mắt là giải phóng dân tộc.",
         isCorrect: false,
       },
     ],
-    hint: "Quan hệ biện chứng giữa vật chất và ý thức cần cả hai yếu tố.",
+    hint: "Đảng ưu tiên nhiệm vụ dân tộc hơn giai cấp lúc bấy giờ.",
   },
   {
     questionNumber: 5,
-    question: "Đối với hành vi kiểm soát qua công nghệ (ép chia sẻ mật khẩu, theo dõi vị trí), phương án nào thể hiện đúng phối hợp gia đình – xã hội – Nhà nước?",
+    question:
+      "Bản lĩnh và sự nhạy bén của Đảng sau sự kiện Nhật đảo chính Pháp (9/3/1945) thể hiện qua văn kiện nào?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Gia đình tự giải quyết, không cần tổ chức xã hội hay pháp luật.",
-        rationale: "Phối hợp đúng tinh thần gia đình – xã hội – Nhà nước: quy ước, tư vấn, pháp luật bảo vệ.",
+        text: "Chương trình hành động của Mặt trận Việt Minh.",
+        rationale: "Văn kiện này không trực tiếp đối phó sự kiện Nhật đảo chính Pháp.",
         isCorrect: false,
       },
       {
-        text: "Chỉ cần lên án đạo đức, không cần dịch vụ tư vấn hay cơ chế bảo vệ.",
-        rationale: "Phối hợp đúng tinh thần gia đình – xã hội – Nhà nước: quy ước, tư vấn, pháp luật bảo vệ.",
+        text: "Tuyên ngôn Độc lập.",
+        rationale:
+          "Đây là văn kiện sau Cách mạng Tháng Tám, không phải phản ứng trực tiếp.",
         isCorrect: false,
       },
       {
-        text: "Kết hợp quy ước gia đình về quyền riêng tư số + tư vấn cộng đồng + áp dụng pháp luật bảo vệ khi cần.",
-        rationale: "Phối hợp đúng tinh thần gia đình – xã hội – Nhà nước: quy ước, tư vấn, pháp luật bảo vệ.",
+        text: "Chỉ thị 'Nhật – Pháp bắn nhau và hành động của chúng ta'.",
+        rationale:
+          "Đúng. Chỉ thị này thể hiện sự chủ động và nhạy bén chiến lược của Đảng.",
         isCorrect: true,
       },
       {
-        text: "Đưa toàn bộ vào xử phạt hành chính, không cần giáo dục.",
-        rationale: "Phối hợp đúng tinh thần gia đình – xã hội – Nhà nước: quy ước, tư vấn, pháp luật bảo vệ.",
+        text: "Lời kêu gọi toàn quốc kháng chiến.",
+        rationale:
+          "Được ban hành năm 1946, không thuộc giai đoạn 1939–1945.",
         isCorrect: false,
       },
     ],
-    hint: "Giải pháp cần phối hợp đa cấp từ gia đình đến nhà nước.",
+    hint: "Đây là văn kiện của Trung ương Đảng ra ngay sau khi Nhật đảo chính Pháp.",
   },
   {
     questionNumber: 6,
-    question: "Một cặp đôi thỏa thuận “vợ làm toàn bộ việc nhà, chồng chỉ kiếm tiền, không thay đổi”. Đánh giá nào đúng theo bình đẳng giới trong CNXH?",
+    question:
+      "Trong Hội nghị Trung ương 8 (5/1941), nguyên tắc tối cao thể hiện bản lĩnh chính trị độc lập, tự chủ là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Hợp lý vì phù hợp “thiên chức”.",
-        rationale: "Bình đẳng giới đòi hỏi tái phân công công việc gia đình theo nguyên tắc công bằng và trách nhiệm chung.",
+        text: "Chỉ liên kết với giai cấp vô sản thế giới.",
+        rationale: "Sai, Đảng chủ trương đoàn kết dân tộc trước hết.",
         isCorrect: false,
       },
       {
-        text: "Vi phạm nguyên tắc công bằng; cần tái phân công dựa trên thời gian, năng lực, thu nhập và trách nhiệm chung.",
-        rationale: "Bình đẳng giới đòi hỏi tái phân công công việc gia đình theo nguyên tắc công bằng và trách nhiệm chung.",
+        text: "Phải duy trì đấu tranh vũ trang cục bộ liên tục.",
+        rationale: "Sai, chủ trương là khởi nghĩa từng phần, không vũ trang liên tục.",
+        isCorrect: false,
+      },
+      {
+        text: "Quyền lợi của bộ phận, của giai cấp phải phục tùng quyền lợi của toàn thể dân tộc.",
+        rationale:
+          "Đúng. Đây là nguyên tắc tối cao của Hội nghị Trung ương 8.",
         isCorrect: true,
       },
       {
-        text: "Chỉ cần tăng thu nhập là cân bằng.",
-        rationale: "Bình đẳng giới đòi hỏi tái phân công công việc gia đình theo nguyên tắc công bằng và trách nhiệm chung.",
-        isCorrect: false,
-      },
-      {
-        text: "Chỉ cần tổ chức một buổi du lịch để hàn gắn.",
-        rationale: "Bình đẳng giới đòi hỏi tái phân công công việc gia đình theo nguyên tắc công bằng và trách nhiệm chung.",
+        text: "Phải chờ đợi sự hỗ trợ của Liên Xô.",
+        rationale: "Sai, Đảng đề cao tính tự lực, tự cường.",
         isCorrect: false,
       },
     ],
-    hint: "Bình đẳng giới nhấn mạnh công bằng và trách nhiệm chung.",
+    hint: "Nguyên tắc này thể hiện tinh thần đặt lợi ích dân tộc lên hàng đầu.",
   },
   {
     questionNumber: 7,
-    question: "Tiêu chí nào phản ánh “gia đình văn hóa” trong bối cảnh kinh tế thị trường định hướng XHCN?",
+    question:
+      "Tổ chức vũ trang chính thức đầu tiên, đặt nền móng cho lực lượng vũ trang cách mạng là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Mức tiêu dùng cao hơn hàng xóm.",
-        rationale: "“Gia đình văn hóa” gắn tuân thủ pháp luật, bình đẳng – tôn trọng, nhân ái, trách nhiệm cộng đồng.",
+        text: "Cứu quốc quân.",
+        rationale: "Thành lập sau, dựa trên sự hợp nhất lực lượng vũ trang.",
         isCorrect: false,
       },
       {
-        text: "Tuân thủ pháp luật, bình đẳng – tôn trọng, môi trường sống nhân ái, trách nhiệm cộng đồng.",
-        rationale: "“Gia đình văn hóa” gắn tuân thủ pháp luật, bình đẳng – tôn trọng, nhân ái, trách nhiệm cộng đồng.",
+        text: "Đội du kích Bắc Sơn.",
+        rationale: "Là tiền thân, nhưng chưa phải tổ chức vũ trang chính thức toàn quốc.",
+        isCorrect: false,
+      },
+      {
+        text: "Đội Việt Nam Tuyên truyền Giải phóng quân (tháng 12/1944).",
+        rationale:
+          "Đúng. Đây là tổ chức vũ trang cách mạng đầu tiên do Hồ Chí Minh sáng lập.",
         isCorrect: true,
       },
       {
-        text: "Không tham gia bất kỳ hoạt động xã hội nào.",
-        rationale: "“Gia đình văn hóa” gắn tuân thủ pháp luật, bình đẳng – tôn trọng, nhân ái, trách nhiệm cộng đồng.",
-        isCorrect: false,
-      },
-      {
-        text: "Mua sắm công nghệ đắt tiền cho mọi thành viên.",
-        rationale: "“Gia đình văn hóa” gắn tuân thủ pháp luật, bình đẳng – tôn trọng, nhân ái, trách nhiệm cộng đồng.",
+        text: "Việt Nam Giải phóng quân (tên gọi sau Cách mạng Tháng Tám).",
+        rationale:
+          "Được hình thành sau khi hợp nhất các lực lượng vũ trang địa phương.",
         isCorrect: false,
       },
     ],
-    hint: "Gia đình văn hóa gắn với pháp luật và trách nhiệm xã hội.",
+    hint: "Đội này do Võ Nguyên Giáp trực tiếp chỉ huy.",
   },
   {
     questionNumber: 8,
-    question: "Chỉ số theo dõi – đánh giá (M&E) phù hợp nhất để đo hiệu quả can thiệp “an toàn số trong gia đình” là:",
+    question:
+      "Theo quyết định của Hội nghị toàn quốc của Đảng tại Tân Trào (8/1945), phương hướng hành động trong Tổng khởi nghĩa là:",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Số lượt “thích” trên mạng xã hội của phường.",
-        rationale: "Chỉ số gắn trực tiếp thay đổi hành vi và thỏa thuận quyền riêng tư số.",
+        text: "Chỉ đánh chiếm thành phố trước để giành chính quyền trung ương.",
+        rationale: "Sai, phải khởi nghĩa đồng loạt, không riêng thành phố.",
         isCorrect: false,
       },
       {
-        text: "Tỷ lệ cặp đôi ký thỏa thuận quyền riêng tư số và giảm yêu cầu kiểm tra điện thoại.",
-        rationale: "Chỉ số gắn trực tiếp thay đổi hành vi và thỏa thuận quyền riêng tư số.",
+        text: "Chỉ phát động khởi nghĩa ở nông thôn rồi bao vây thành thị.",
+        rationale: "Sai, tổng khởi nghĩa phải diễn ra trên phạm vi cả nước.",
+        isCorrect: false,
+      },
+      {
+        text: "Tập trung, thống nhất và kịp thời; đánh chiếm ngay những nơi chắc thắng.",
+        rationale:
+          "Đúng. Đây là phương châm hành động của Tổng khởi nghĩa tháng 8/1945.",
         isCorrect: true,
       },
       {
-        text: "Tốc độ tăng dân số tự nhiên của quận.",
-        rationale: "Chỉ số gắn trực tiếp thay đổi hành vi và thỏa thuận quyền riêng tư số.",
-        isCorrect: false,
-      },
-      {
-        text: "Số poster treo tại trường học.",
-        rationale: "Chỉ số gắn trực tiếp thay đổi hành vi và thỏa thuận quyền riêng tư số.",
+        text: "Chờ quân Đồng minh vào tước khí giới của Nhật rồi mới hành động.",
+        rationale: "Sai, nếu chờ sẽ bỏ lỡ thời cơ lịch sử.",
         isCorrect: false,
       },
     ],
-    hint: "Chỉ số cần đo lường thay đổi hành vi cụ thể.",
+    hint: "Phương châm hành động là 'toàn dân khởi nghĩa, toàn diện và kịp thời'.",
   },
   {
     questionNumber: 9,
-    question: "Tại khu công nghiệp, cha/mẹ tăng ca, trẻ thiếu giám sát. Giải pháp ưu tiên theo tư duy biện chứng vật chất – tinh thần là:",
+    question:
+      "Thời cơ giành chính quyền trong Cách mạng Tháng Tám 1945 được Đảng xác định tồn tại trong thời gian nào?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Kêu gọi “tự ý thức” của trẻ, không cần dịch vụ.",
-        rationale: "Kết hợp điều kiện vật chất (dịch vụ, giờ làm) với giáo dục – phối hợp thiết chế.",
+        text: "Khi Nhật mới vào Đông Dương.",
+        rationale: "Lúc này lực lượng ta chưa đủ mạnh.",
         isCorrect: false,
       },
       {
-        text: "Phát triển dịch vụ trông trẻ ca tối, điều chỉnh giờ làm linh hoạt, kèm chương trình giáo dục gia đình – nhà trường – cộng đồng.",
-        rationale: "Kết hợp điều kiện vật chất (dịch vụ, giờ làm) với giáo dục – phối hợp thiết chế.",
+        text: "Khi Pháp tuyên bố đầu hàng Đức.",
+        rationale: "Xảy ra trước đó, chưa tạo thời cơ chín muồi.",
+        isCorrect: false,
+      },
+      {
+        text: "Khi Nhật Bản tuyên bố đầu hàng Đồng minh (15/8/1945) và trước khi quân Đồng minh vào Đông Dương.",
+        rationale:
+          "Đúng. Đây là 'thời cơ ngàn năm có một' mà Đảng đã kịp thời nắm bắt.",
         isCorrect: true,
       },
       {
-        text: "Cấm làm thêm giờ triệt để.",
-        rationale: "Kết hợp điều kiện vật chất (dịch vụ, giờ làm) với giáo dục – phối hợp thiết chế.",
-        isCorrect: false,
-      },
-      {
-        text: "Phó mặc cho mạng xã hội giáo dục trẻ.",
-        rationale: "Kết hợp điều kiện vật chất (dịch vụ, giờ làm) với giáo dục – phối hợp thiết chế.",
+        text: "Khi quân Đồng minh đổ bộ vào Việt Nam.",
+        rationale:
+          "Sai, khi đó tình hình phức tạp hơn, thời cơ đã qua.",
         isCorrect: false,
       },
     ],
-    hint: "Giải pháp cần kết hợp vật chất và tinh thần biện chứng.",
+    hint: "Hãy nhớ thời điểm ngay sau khi Nhật đầu hàng Đồng minh.",
   },
   {
     questionNumber: 10,
-    question: "Khẳng định nào phù hợp với tư tưởng Hồ Chí Minh vận dụng CNXHKH về gia đình trong thời kỳ quá độ?",
+    question:
+      "Thắng lợi của Cách mạng Tháng Tám 1945 là minh chứng rõ rệt nhất cho khả năng nào của Đảng Cộng sản Việt Nam?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Gia đình trước hết là không gian riêng tư, tách khỏi lợi ích xã hội.",
-        rationale: "Phản ánh đúng tinh thần “no ấm, bình đẳng, tiến bộ, hạnh phúc”, gắn kỷ cương pháp luật và mục tiêu dân chủ – văn minh.",
+        text: "Khả năng lãnh đạo chống Pháp mà không cần đến đấu tranh vũ trang.",
+        rationale:
+          "Sai, thắng lợi này gắn liền với phong trào đấu tranh vũ trang và chính trị kết hợp.",
         isCorrect: false,
       },
       {
-        text: "Xây dựng gia đình “no ấm, bình đẳng, tiến bộ, hạnh phúc”, nêu gương, giữ kỷ cương pháp luật, gắn với mục tiêu dân chủ – văn minh.",
-        rationale: "Phản ánh đúng tinh thần “no ấm, bình đẳng, tiến bộ, hạnh phúc”, gắn kỷ cương pháp luật và mục tiêu dân chủ – văn minh.",
+        text: "Khả năng giải quyết đồng thời cả hai nhiệm vụ dân tộc và dân chủ trong cùng một lúc.",
+        rationale:
+          "Sai, nhiệm vụ dân tộc được đặt lên hàng đầu, dân chủ thực hiện sau khi độc lập.",
+        isCorrect: false,
+      },
+      {
+        text: "Khả năng xây dựng thành công chủ nghĩa xã hội ngay sau giải phóng dân tộc.",
+        rationale: "Sai, đó là nhiệm vụ của giai đoạn sau.",
+        isCorrect: false,
+      },
+      {
+        text: "Khả năng lãnh đạo hoàn toàn thắng lợi sự nghiệp giải phóng dân tộc ở một nước thuộc địa nửa phong kiến.",
+        rationale:
+          "Đúng. Đây là minh chứng rõ rệt nhất cho vai trò lãnh đạo của Đảng.",
         isCorrect: true,
       },
-      {
-        text: "Lấy truyền thống thay cho pháp luật.",
-        rationale: "Phản ánh đúng tinh thần “no ấm, bình đẳng, tiến bộ, hạnh phúc”, gắn kỷ cương pháp luật và mục tiêu dân chủ – văn minh.",
-        isCorrect: false,
-      },
-      {
-        text: "Đề cao nam quyền để bảo vệ trật tự.",
-        rationale: "Phản ánh đúng tinh thần “no ấm, bình đẳng, tiến bộ, hạnh phúc”, gắn kỷ cương pháp luật và mục tiêu dân chủ – văn minh.",
-        isCorrect: false,
-      },
     ],
-    hint: "Tư tưởng Hồ Chí Minh nhấn mạnh bình đẳng và tiến bộ gắn với xã hội.",
+    hint: "Đây là thắng lợi khẳng định vai trò lãnh đạo đúng đắn của Đảng.",
   },
 ];
 
@@ -402,9 +439,8 @@ const Quiz: React.FC = () => {
             </div>
             {(showFeedback || isAnswered) && (
               <motion.div
-                className={`text-center text-lg font-semibold mb-4 ${
-                  isCorrectAnswer ? "text-green-600" : "text-red-600"
-                }`}
+                className={`text-center text-lg font-semibold mb-4 ${isCorrectAnswer ? "text-green-600" : "text-red-600"
+                  }`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4 }}
@@ -414,11 +450,11 @@ const Quiz: React.FC = () => {
                   <span className="font-medium">Giải thích: </span>
                   {isCorrectAnswer
                     ? questions[current].answerOptions[
-                        answers[current] as number
-                      ].rationale
+                      answers[current] as number
+                    ].rationale
                     : questions[current].answerOptions[
-                        findCorrectAnswerIndex(questions[current])
-                      ].rationale}
+                      findCorrectAnswerIndex(questions[current])
+                    ].rationale}
                 </div>
               </motion.div>
             )}
@@ -477,35 +513,35 @@ const Quiz: React.FC = () => {
                 ans !== null &&
                 !questions[idx]?.answerOptions[ans]?.isCorrect
             ) && (
-              <div className="mt-6 text-left max-w-xl mx-auto">
-                <div className="font-semibold text-red-600 mb-2">
-                  Các câu bạn trả lời sai, hãy lưu ý:
+                <div className="mt-6 text-left max-w-xl mx-auto">
+                  <div className="font-semibold text-red-600 mb-2">
+                    Các câu bạn trả lời sai, hãy lưu ý:
+                  </div>
+                  <ul className="space-y-4">
+                    {questions.map((q, idx) =>
+                      answers[idx] !== null &&
+                        !q.answerOptions[answers[idx] as number].isCorrect ? (
+                        <li
+                          key={idx}
+                          className="bg-red-50 border-l-4 border-red-400 p-4 rounded"
+                        >
+                          <div className="font-medium text-gray-800 mb-1">
+                            Câu {idx + 1}: {q.question}
+                          </div>
+                          <div className="text-gray-700 mb-1">
+                            <span className="font-semibold">Đáp án đúng:</span>{" "}
+                            {String.fromCharCode(65 + findCorrectAnswerIndex(q))}.{" "}
+                            {q.answerOptions[findCorrectAnswerIndex(q)].text}
+                          </div>
+                          <div className="text-gray-600 text-sm italic">
+                            {q.answerOptions[findCorrectAnswerIndex(q)].rationale}
+                          </div>
+                        </li>
+                      ) : null
+                    )}
+                  </ul>
                 </div>
-                <ul className="space-y-4">
-                  {questions.map((q, idx) =>
-                    answers[idx] !== null &&
-                    !q.answerOptions[answers[idx] as number].isCorrect ? (
-                      <li
-                        key={idx}
-                        className="bg-red-50 border-l-4 border-red-400 p-4 rounded"
-                      >
-                        <div className="font-medium text-gray-800 mb-1">
-                          Câu {idx + 1}: {q.question}
-                        </div>
-                        <div className="text-gray-700 mb-1">
-                          <span className="font-semibold">Đáp án đúng:</span>{" "}
-                          {String.fromCharCode(65 + findCorrectAnswerIndex(q))}.{" "}
-                          {q.answerOptions[findCorrectAnswerIndex(q)].text}
-                        </div>
-                        <div className="text-gray-600 text-sm italic">
-                          {q.answerOptions[findCorrectAnswerIndex(q)].rationale}
-                        </div>
-                      </li>
-                    ) : null
-                  )}
-                </ul>
-              </div>
-            )}
+              )}
             <button
               className="mt-8 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
               onClick={resetQuiz}
