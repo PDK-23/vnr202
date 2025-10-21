@@ -1,19 +1,18 @@
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import type { Variants } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
 
 // ===== ICONS =====
 import {
-  FaQuoteLeft,
   FaChartLine,
-  FaLightbulb,
   FaChevronDown,
-  FaUpRightFromSquare,
-  FaXmark,
-  FaNewspaper,
-  FaArrowUp,
-  FaUsers,
   FaGraduationCap,
+  FaLightbulb,
+  FaNewspaper,
+  FaQuoteLeft,
+  FaUpRightFromSquare,
+  FaUsers,
+  FaXmark
 } from "react-icons/fa6";
 
 // ===== ASSETS =====
