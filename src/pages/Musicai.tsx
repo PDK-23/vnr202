@@ -8,7 +8,7 @@ const videoSrc = video;
 const Musicai: React.FC = () => {
   return (
     <div className="min-h-screen w-full pt-28 pb-12 px-4 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 flex items-center justify-center">
-      <div className="w-full max-w-5xl">
+      <div className="w-full max-w-6xl">
         <div className="bg-white/95 border border-indigo-100 rounded-3xl shadow-2xl backdrop-blur-md p-6 md:p-8">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6">Video tóm tắt nội dung</h1>
 

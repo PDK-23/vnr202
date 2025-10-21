@@ -236,55 +236,6 @@ const ArticleModal: React.FC<{
   </div>
 );
 
-
-const QuickNav: React.FC = () => {
-  const items = [
-    { href: "#coso", label: "Cơ sở lý luận" },
-    { href: "#thuctien", label: "Thực tiễn VN" },
-    { href: "#giaiphap", label: "Giải pháp" },
-    { href: "#articles", label: "Thư viện" },
-    // { href: "#ketluan", label: "Kết luận" },
-  ];
-  const [showTop, setShowTop] = React.useState(false);
-
-  React.useEffect(() => {
-    const onScroll = () => setShowTop(window.scrollY > 600);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  return (
-    <>
-      <nav className="sticky top-4 z-40 px-4">
-        <div className="mx-auto w-full max-w-6xl">
-          <div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl border border-indigo-100 p-3 flex flex-wrap items-center gap-2 justify-center">
-            {items.map((it) => (
-              <a
-                key={it.href}
-                href={it.href}
-                className="px-4 py-2 text-sm font-medium rounded-xl bg-gradient-to-r from-indigo-50 to-purple-50 hover:from-indigo-100 hover:to-purple-100 text-indigo-700 transition-all hover:shadow-md"
-              >
-                {it.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
-      {showTop && (
-        <motion.button
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-6 right-6 z-40 p-4 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 text-white shadow-2xl hover:shadow-indigo-500/50 hover:scale-110 transition-all"
-          aria-label="Lên đầu trang"
-        >
-          <FaArrowUp className="text-xl" />
-        </motion.button>
-      )}
-    </>
-  );
-};
-
 // (Helper components for external citations were removed as they are unused in the IntroPage)
 
 
@@ -293,7 +244,7 @@ const IntroPage: React.FC = () => {
   const [articleModal, setArticleModal] = React.useState<ArticleItem | null>(null);
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 text-gray-800">
+    <div className="relative w-full py-4 min-h-screen overflow-hidden bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 text-gray-800">
       {/* Video background */}
       <div className="absolute inset-0 -z-10">
         <video
@@ -306,11 +257,6 @@ const IntroPage: React.FC = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-white/30" />
       </div>
-
-      <div className="pt-4">
-        <QuickNav />
-      </div>
-
       {/* Hero Section */}
       <header className="relative container mx-auto px-4 pt-16 pb-20 text-center">
         <motion.div

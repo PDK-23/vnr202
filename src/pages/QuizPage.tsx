@@ -22,282 +22,258 @@ const questions: QuizQuestion[] = [
     answerOptions: [
       {
         text: "Giữa giai cấp công nhân và giai cấp tư sản.",
-        rationale:
-          "Đây là mâu thuẫn giai cấp, không phải mâu thuẫn cơ bản chi phối toàn xã hội thời kỳ này.",
+        rationale: "Mâu thuẫn này tồn tại nhưng không phải mâu thuẫn chủ yếu trong thời kỳ 1939–1945.",
         isCorrect: false,
       },
       {
         text: "Giữa toàn thể dân tộc Việt Nam với giai cấp địa chủ phong kiến.",
-        rationale:
-          "Mâu thuẫn này tồn tại nhưng không phải là mâu thuẫn chủ yếu trong bối cảnh bị xâm lược.",
+        rationale: "Mâu thuẫn này chưa thể hiện tính cấp bách bằng mâu thuẫn dân tộc – đế quốc.",
         isCorrect: false,
       },
       {
         text: "Giữa giai cấp nông dân và địa chủ.",
-        rationale:
-          "Đây là mâu thuẫn về lợi ích giai cấp trong nông thôn, không phải mâu thuẫn quyết định chiến lược cách mạng giai đoạn 1939–1945.",
+        rationale: "Mâu thuẫn giai cấp không phải trung tâm chiến lược trong giai đoạn này.",
         isCorrect: false,
       },
       {
         text: "Giữa toàn thể dân tộc Việt Nam với đế quốc Pháp và phát xít Nhật.",
-        rationale:
-          "Đúng. Đây là mâu thuẫn dân tộc cơ bản, quyết định nhiệm vụ trung tâm là giải phóng dân tộc.",
+        rationale: "Đây là mâu thuẫn chủ yếu, quyết định nhiệm vụ giải phóng dân tộc là trung tâm chiến lược của Đảng.",
         isCorrect: true,
       },
     ],
-    hint: "Hãy nhớ bối cảnh nước ta bị Pháp thống trị và Nhật xâm lược.",
+    hint: "Tập trung vào mâu thuẫn dân tộc – đế quốc trong thời kỳ chiến tranh thế giới thứ hai.",
   },
   {
     questionNumber: 2,
     question:
-      "Hội nghị nào của Ban Chấp hành Trung ương Đảng được coi là đỉnh cao của bản lĩnh chính trị, khẳng định dứt khoát giải phóng dân tộc là nhiệm vụ cấp thiết nhất?",
+      "Hội nghị nào của Ban Chấp hành Trung ương Đảng được coi là đỉnh cao của bản lĩnh chính trị, đã khẳng định dứt khoát vấn đề giải phóng dân tộc là nhiệm vụ cấp thiết nhất, chỉ giải quyết một vấn đề căn kíp là 'dân tộc giải phóng'?",
     imageUrl: null,
     answerOptions: [
       {
         text: "Hội nghị Trung ương tháng 11/1939 (Bà Điểm).",
-        rationale:
-          "Hội nghị này mở đầu sự chuyển hướng, nhưng chưa xác định triệt để nhiệm vụ dân tộc giải phóng.",
-        isCorrect: false,
-      },
-      {
-        text: "Hội nghị Trung ương tháng 7/1936.",
-        rationale:
-          "Hội nghị này tập trung vào phong trào dân chủ, chưa đặt nhiệm vụ giải phóng dân tộc lên hàng đầu.",
+        rationale: "Hội nghị này mở đầu sự chuyển hướng, nhưng chưa khẳng định dứt khoát nhiệm vụ dân tộc.",
         isCorrect: false,
       },
       {
         text: "Hội nghị Trung ương lần thứ 8 (tháng 5/1941) ở Cao Bằng.",
-        rationale:
-          "Đúng. Hội nghị Trung ương 8 là đỉnh cao chuyển hướng, xác định giải phóng dân tộc là nhiệm vụ trung tâm.",
+        rationale: "Hội nghị 8 khẳng định nhiệm vụ giải phóng dân tộc là cấp thiết nhất – đỉnh cao bản lĩnh chính trị của Đảng.",
         isCorrect: true,
       },
       {
+        text: "Hội nghị Trung ương tháng 7/1936.",
+        rationale: "Hội nghị này thuộc thời kỳ Mặt trận Dân chủ, không phải giai đoạn 1939–1945.",
+        isCorrect: false,
+      },
+      {
         text: "Hội nghị toàn quốc của Đảng (8/1945).",
-        rationale:
-          "Hội nghị này chuẩn bị cho Tổng khởi nghĩa, không phải nơi khẳng định bước chuyển chiến lược.",
+        rationale: "Hội nghị toàn quốc cụ thể hóa tổng khởi nghĩa, không phải là nơi đề ra chủ trương giải phóng dân tộc đầu tiên.",
         isCorrect: false,
       },
     ],
-    hint: "Hội nghị này do Nguyễn Ái Quốc chủ trì tại Pác Bó.",
+    hint: "Diễn ra ở Cao Bằng năm 1941, gắn liền với sự trở về của Nguyễn Ái Quốc.",
   },
   {
     questionNumber: 3,
     question:
-      "Sự sáng tạo lớn nhất của Đảng trong việc xây dựng khối đại đoàn kết toàn dân tộc giai đoạn này là:",
+      "Sự sáng tạo lớn nhất của Đảng trong việc xây dựng khối đại đoàn kết toàn dân tộc, tập hợp rộng rãi mọi lực lượng yêu nước trong giai đoạn này là gì?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Khôi phục lại phong trào Xô viết Nghệ Tĩnh.",
-        rationale:
-          "Đây là phong trào cách mạng trước đó, không phải hình thức tập hợp mới.",
-        isCorrect: false,
-      },
-      {
-        text: "Thành lập Mặt trận Dân chủ Đông Dương.",
-        rationale:
-          "Mặt trận này ra đời giai đoạn 1936–1939, không phải sáng tạo lớn nhất trong thời kỳ 1939–1945.",
-        isCorrect: false,
-      },
-      {
         text: "Thành lập Mặt trận Việt Nam Độc lập Đồng minh (Việt Minh).",
-        rationale:
-          "Đúng. Việt Minh là hình thức tập hợp sáng tạo, gắn với mục tiêu giải phóng dân tộc.",
+        rationale: "Mặt trận Việt Minh là sáng tạo lớn nhất, tập hợp mọi tầng lớp yêu nước vì độc lập dân tộc.",
         isCorrect: true,
       },
       {
+        text: "Thành lập Mặt trận Dân chủ Đông Dương.",
+        rationale: "Mặt trận này thuộc thời kỳ 1936–1939, không phải 1939–1945.",
+        isCorrect: false,
+      },
+      {
+        text: "Khôi phục lại phong trào Xô viết Nghệ Tĩnh.",
+        rationale: "Đây là phong trào trước đó (1930–1931), không phải sáng tạo giai đoạn 1939–1945.",
+        isCorrect: false,
+      },
+      {
         text: "Tổ chức các đội du kích Bắc Sơn.",
-        rationale:
-          "Đây là hoạt động quân sự, không phải tổ chức chính trị đại đoàn kết toàn dân.",
+        rationale: "Các đội du kích là hình thức vũ trang, không phải sáng tạo về mặt trận đoàn kết.",
         isCorrect: false,
       },
     ],
-    hint: "Tổ chức này do Nguyễn Ái Quốc sáng lập năm 1941.",
+    hint: "Tổ chức này ra đời năm 1941, biểu tượng của đại đoàn kết toàn dân.",
   },
   {
     questionNumber: 4,
     question:
-      "Để mở rộng Mặt trận dân tộc thống nhất, Đảng đã có sự chuyển hướng chiến lược nào về cách mạng ruộng đất tại Hội nghị Trung ương (5/1941)?",
+      "Để mở rộng Mặt trận dân tộc thống nhất, Đảng đã có sự chuyển hướng chiến lược sáng tạo nào liên quan đến nhiệm vụ cách mạng ruộng đất tại Hội nghị Trung ương (5/1941)?",
     imageUrl: null,
     answerOptions: [
       {
         text: "Quyết định hoàn thành cách mạng ruộng đất ngay trong thời gian kháng chiến.",
-        rationale: "Điều này chưa phù hợp với mục tiêu cấp bách lúc bấy giờ.",
+        rationale: "Chủ trương này không phù hợp với nhiệm vụ dân tộc lúc bấy giờ.",
         isCorrect: false,
       },
       {
         text: "Tạm thời xóa bỏ hoàn toàn vấn đề ruộng đất để tập trung vào mục tiêu dân tộc.",
-        rationale:
-          "Sai, Đảng không xóa bỏ mà chỉ tạm gác khẩu hiệu để tập trung giải phóng dân tộc.",
+        rationale: "Không xóa bỏ hoàn toàn, mà chỉ tạm gác và điều chỉnh khẩu hiệu cho phù hợp.",
+        isCorrect: false,
+      },
+      {
+        text: "Vẫn giữ nguyên khẩu hiệu 'Người cày có ruộng'.",
+        rationale: "Khẩu hiệu này được điều chỉnh để mở rộng đoàn kết dân tộc.",
         isCorrect: false,
       },
       {
         text: "Tạm gác khẩu hiệu 'cách mạng ruộng đất', thay bằng khẩu hiệu giảm tô, giảm tức và tịch thu ruộng đất của đế quốc, Việt gian chia cho dân cày nghèo.",
-        rationale:
-          "Đúng. Đây là chủ trương mềm dẻo, phù hợp yêu cầu đoàn kết dân tộc.",
+        rationale: "Chủ trương này thể hiện sự linh hoạt, sáng tạo để mở rộng mặt trận dân tộc.",
         isCorrect: true,
       },
-      {
-        text: "Vẫn giữ nguyên khẩu hiệu 'Người cày có ruộng'.",
-        rationale:
-          "Không phù hợp với giai đoạn trước mắt là giải phóng dân tộc.",
-        isCorrect: false,
-      },
     ],
-    hint: "Đảng ưu tiên nhiệm vụ dân tộc hơn giai cấp lúc bấy giờ.",
+    hint: "Liên quan đến sự điều chỉnh khẩu hiệu ruộng đất để đoàn kết dân tộc.",
   },
   {
     questionNumber: 5,
     question:
-      "Bản lĩnh và sự nhạy bén của Đảng sau sự kiện Nhật đảo chính Pháp (9/3/1945) thể hiện qua văn kiện nào?",
+      "Bản lĩnh và sự nhạy bén của Đảng sau sự kiện Nhật đảo chính Pháp (9/3/1945) được thể hiện qua văn kiện lịch sử nào?",
     imageUrl: null,
     answerOptions: [
       {
-        text: "Chương trình hành động của Mặt trận Việt Minh.",
-        rationale: "Văn kiện này không trực tiếp đối phó sự kiện Nhật đảo chính Pháp.",
-        isCorrect: false,
-      },
-      {
-        text: "Tuyên ngôn Độc lập.",
-        rationale:
-          "Đây là văn kiện sau Cách mạng Tháng Tám, không phải phản ứng trực tiếp.",
-        isCorrect: false,
-      },
-      {
-        text: "Chỉ thị 'Nhật – Pháp bắn nhau và hành động của chúng ta'.",
-        rationale:
-          "Đúng. Chỉ thị này thể hiện sự chủ động và nhạy bén chiến lược của Đảng.",
+        text: "Chỉ thị Nhật – Pháp bắn nhau và hành động của chúng ta.",
+        rationale: "Văn kiện này thể hiện rõ bản lĩnh và sự chủ động nắm bắt thời cơ của Đảng.",
         isCorrect: true,
       },
       {
+        text: "Tuyên ngôn Độc lập.",
+        rationale: "Đây là văn kiện sau Cách mạng Tháng Tám, không phải phản ứng trực tiếp với đảo chính Nhật – Pháp.",
+        isCorrect: false,
+      },
+      {
+        text: "Chương trình hành động của Mặt trận Việt Minh.",
+        rationale: "Đây là văn kiện hướng dẫn lâu dài, không phản ánh trực tiếp tình huống 9/3/1945.",
+        isCorrect: false,
+      },
+      {
         text: "Lời kêu gọi toàn quốc kháng chiến.",
-        rationale:
-          "Được ban hành năm 1946, không thuộc giai đoạn 1939–1945.",
+        rationale: "Ra đời năm 1946, không thuộc giai đoạn Nhật đảo chính Pháp.",
         isCorrect: false,
       },
     ],
-    hint: "Đây là văn kiện của Trung ương Đảng ra ngay sau khi Nhật đảo chính Pháp.",
+    hint: "Văn kiện này ra đời ngay sau khi Nhật đảo chính Pháp.",
   },
   {
     questionNumber: 6,
     question:
-      "Trong Hội nghị Trung ương 8 (5/1941), nguyên tắc tối cao thể hiện bản lĩnh chính trị độc lập, tự chủ là:",
+      "Trong Hội nghị Trung ương 8 (5/1941), nguyên tắc tối cao nào đã được Đảng đề ra, thể hiện rõ bản lĩnh chính trị độc lập, tự chủ?",
     imageUrl: null,
     answerOptions: [
       {
         text: "Chỉ liên kết với giai cấp vô sản thế giới.",
-        rationale: "Sai, Đảng chủ trương đoàn kết dân tộc trước hết.",
+        rationale: "Không chỉ dựa vào quốc tế, mà đặt lợi ích dân tộc lên trên hết.",
         isCorrect: false,
       },
       {
         text: "Phải duy trì đấu tranh vũ trang cục bộ liên tục.",
-        rationale: "Sai, chủ trương là khởi nghĩa từng phần, không vũ trang liên tục.",
+        rationale: "Đây không phải là nguyên tắc tối cao mà là một hình thức đấu tranh.",
         isCorrect: false,
       },
       {
         text: "Quyền lợi của bộ phận, của giai cấp phải phục tùng quyền lợi của toàn thể dân tộc.",
-        rationale:
-          "Đúng. Đây là nguyên tắc tối cao của Hội nghị Trung ương 8.",
+        rationale: "Nguyên tắc này thể hiện bản lĩnh độc lập, tự chủ, đặt lợi ích dân tộc lên trên hết.",
         isCorrect: true,
       },
       {
         text: "Phải chờ đợi sự hỗ trợ của Liên Xô.",
-        rationale: "Sai, Đảng đề cao tính tự lực, tự cường.",
+        rationale: "Trái với tinh thần tự lực, tự cường mà Hội nghị 8 đề ra.",
         isCorrect: false,
       },
     ],
-    hint: "Nguyên tắc này thể hiện tinh thần đặt lợi ích dân tộc lên hàng đầu.",
+    hint: "Nguyên tắc này thể hiện sự đặt lợi ích dân tộc lên hàng đầu.",
   },
   {
     questionNumber: 7,
     question:
-      "Tổ chức vũ trang chính thức đầu tiên, đặt nền móng cho lực lượng vũ trang cách mạng là:",
+      "Tổ chức vũ trang chính thức đầu tiên, đặt nền móng cho việc xây dựng lực lượng vũ trang cách mạng trong giai đoạn này là:",
     imageUrl: null,
     answerOptions: [
       {
         text: "Cứu quốc quân.",
-        rationale: "Thành lập sau, dựa trên sự hợp nhất lực lượng vũ trang.",
+        rationale: "Ra đời sau, trên cơ sở các đội du kích và Việt Nam Tuyên truyền Giải phóng quân.",
         isCorrect: false,
       },
       {
         text: "Đội du kích Bắc Sơn.",
-        rationale: "Là tiền thân, nhưng chưa phải tổ chức vũ trang chính thức toàn quốc.",
+        rationale: "Là lực lượng tiền thân, chưa phải tổ chức chính thức thống nhất toàn quốc.",
         isCorrect: false,
       },
       {
         text: "Đội Việt Nam Tuyên truyền Giải phóng quân (tháng 12/1944).",
-        rationale:
-          "Đúng. Đây là tổ chức vũ trang cách mạng đầu tiên do Hồ Chí Minh sáng lập.",
+        rationale: "Lực lượng vũ trang chính thức đầu tiên, do Hồ Chí Minh sáng lập và chỉ đạo.",
         isCorrect: true,
       },
       {
         text: "Việt Nam Giải phóng quân (tên gọi sau Cách mạng Tháng Tám).",
-        rationale:
-          "Được hình thành sau khi hợp nhất các lực lượng vũ trang địa phương.",
+        rationale: "Tên gọi này xuất hiện sau khi hợp nhất lực lượng, không phải đầu tiên.",
         isCorrect: false,
       },
     ],
-    hint: "Đội này do Võ Nguyên Giáp trực tiếp chỉ huy.",
+    hint: "Tổ chức do Võ Nguyên Giáp chỉ huy, thành lập năm 1944.",
   },
   {
     questionNumber: 8,
     question:
-      "Theo quyết định của Hội nghị toàn quốc của Đảng tại Tân Trào (8/1945), phương hướng hành động trong Tổng khởi nghĩa là:",
+      "Theo quyết định của Hội nghị toàn quốc của Đảng tại Tân Trào (8/1945), phương hướng hành động trong Tổng khởi nghĩa là gì?",
     imageUrl: null,
     answerOptions: [
       {
         text: "Chỉ đánh chiếm thành phố trước để giành chính quyền trung ương.",
-        rationale: "Sai, phải khởi nghĩa đồng loạt, không riêng thành phố.",
+        rationale: "Không đúng, khởi nghĩa diễn ra đồng loạt và linh hoạt.",
         isCorrect: false,
       },
       {
         text: "Chỉ phát động khởi nghĩa ở nông thôn rồi bao vây thành thị.",
-        rationale: "Sai, tổng khởi nghĩa phải diễn ra trên phạm vi cả nước.",
+        rationale: "Không đúng, chủ trương là khởi nghĩa đồng thời và tập trung.",
+        isCorrect: false,
+      },
+      {
+        text: "Chờ quân Đồng minh vào tước khí giới của Nhật rồi mới hành động.",
+        rationale: "Đi ngược với tinh thần chủ động giành chính quyền kịp thời.",
         isCorrect: false,
       },
       {
         text: "Tập trung, thống nhất và kịp thời; đánh chiếm ngay những nơi chắc thắng.",
-        rationale:
-          "Đúng. Đây là phương châm hành động của Tổng khởi nghĩa tháng 8/1945.",
+        rationale: "Chủ trương đúng đắn, thể hiện tính chủ động, linh hoạt trong Tổng khởi nghĩa.",
         isCorrect: true,
       },
-      {
-        text: "Chờ quân Đồng minh vào tước khí giới của Nhật rồi mới hành động.",
-        rationale: "Sai, nếu chờ sẽ bỏ lỡ thời cơ lịch sử.",
-        isCorrect: false,
-      },
     ],
-    hint: "Phương châm hành động là 'toàn dân khởi nghĩa, toàn diện và kịp thời'.",
+    hint: "Nhấn mạnh ba yếu tố: tập trung – thống nhất – kịp thời.",
   },
   {
     questionNumber: 9,
     question:
-      "Thời cơ giành chính quyền trong Cách mạng Tháng Tám 1945 được Đảng xác định tồn tại trong thời gian nào?",
+      "Thời cơ giành chính quyền trong Cách mạng Tháng Tám 1945 được Đảng nhận định chỉ tồn tại trong thời gian ngắn ngủi nào?",
     imageUrl: null,
     answerOptions: [
       {
         text: "Khi Nhật mới vào Đông Dương.",
-        rationale: "Lúc này lực lượng ta chưa đủ mạnh.",
+        rationale: "Chưa phải thời cơ chín muồi để khởi nghĩa.",
         isCorrect: false,
       },
       {
         text: "Khi Pháp tuyên bố đầu hàng Đức.",
-        rationale: "Xảy ra trước đó, chưa tạo thời cơ chín muồi.",
+        rationale: "Diễn ra sớm hơn, không liên quan trực tiếp đến Đông Dương.",
         isCorrect: false,
       },
       {
         text: "Khi Nhật Bản tuyên bố đầu hàng Đồng minh (15/8/1945) và trước khi quân Đồng minh vào Đông Dương.",
-        rationale:
-          "Đúng. Đây là 'thời cơ ngàn năm có một' mà Đảng đã kịp thời nắm bắt.",
+        rationale: "Đây là thời điểm ngắn ngủi, thuận lợi nhất để giành chính quyền.",
         isCorrect: true,
       },
       {
-        text: "Khi quân Đồng minh đổ bộ vào Việt Nam.",
-        rationale:
-          "Sai, khi đó tình hình phức tạp hơn, thời cơ đã qua.",
+        text: "Khi quân Đồng minh đổ bộ vào miền Bắc và miền Nam Việt Nam.",
+        rationale: "Khi đó đã muộn, mất yếu tố bất ngờ.",
         isCorrect: false,
       },
     ],
-    hint: "Hãy nhớ thời điểm ngay sau khi Nhật đầu hàng Đồng minh.",
+    hint: "Liên quan đến việc Nhật đầu hàng và khoảng trống quyền lực ở Đông Dương.",
   },
   {
     questionNumber: 10,
@@ -307,31 +283,29 @@ const questions: QuizQuestion[] = [
     answerOptions: [
       {
         text: "Khả năng lãnh đạo chống Pháp mà không cần đến đấu tranh vũ trang.",
-        rationale:
-          "Sai, thắng lợi này gắn liền với phong trào đấu tranh vũ trang và chính trị kết hợp.",
+        rationale: "Không chính xác, thắng lợi này nhờ kết hợp chính trị và vũ trang.",
         isCorrect: false,
       },
       {
         text: "Khả năng giải quyết đồng thời cả hai nhiệm vụ dân tộc và dân chủ trong cùng một lúc.",
-        rationale:
-          "Sai, nhiệm vụ dân tộc được đặt lên hàng đầu, dân chủ thực hiện sau khi độc lập.",
+        rationale: "Cách mạng Tháng Tám chủ yếu hoàn thành nhiệm vụ dân tộc, dân chủ chỉ ở mức khởi đầu.",
         isCorrect: false,
       },
       {
         text: "Khả năng xây dựng thành công chủ nghĩa xã hội ngay sau giải phóng dân tộc.",
-        rationale: "Sai, đó là nhiệm vụ của giai đoạn sau.",
+        rationale: "Xây dựng CNXH diễn ra sau đó, không thuộc thắng lợi trực tiếp của Cách mạng Tháng Tám.",
         isCorrect: false,
       },
       {
         text: "Khả năng lãnh đạo hoàn toàn thắng lợi sự nghiệp giải phóng dân tộc ở một nước thuộc địa nửa phong kiến.",
-        rationale:
-          "Đúng. Đây là minh chứng rõ rệt nhất cho vai trò lãnh đạo của Đảng.",
+        rationale: "Đây là minh chứng rõ nhất về bản lĩnh, trí tuệ, năng lực lãnh đạo cách mạng của Đảng.",
         isCorrect: true,
       },
     ],
-    hint: "Đây là thắng lợi khẳng định vai trò lãnh đạo đúng đắn của Đảng.",
+    hint: "Nhấn mạnh vai trò lãnh đạo và bản lĩnh cách mạng của Đảng.",
   },
 ];
+
 
 const Quiz: React.FC = () => {
   const [current, setCurrent] = useState(0);
@@ -387,9 +361,9 @@ const Quiz: React.FC = () => {
     q.answerOptions.findIndex((opt) => opt.isCorrect);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f4f7ff] py-10 px-2">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f4f7ff] py-10 px-2" style={{marginTop: '80px'}}>
       <motion.div
-        className="w-full max-w-2xl bg-white/90 rounded-2xl shadow-xl p-6 md:p-10"
+        className="w-full max-w-4xl bg-white/90 rounded-2xl shadow-xl p-6 md:p-10"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
@@ -439,8 +413,9 @@ const Quiz: React.FC = () => {
             </div>
             {(showFeedback || isAnswered) && (
               <motion.div
-                className={`text-center text-lg font-semibold mb-4 ${isCorrectAnswer ? "text-green-600" : "text-red-600"
-                  }`}
+                className={`text-center text-lg font-semibold mb-4 ${
+                  isCorrectAnswer ? "text-green-600" : "text-red-600"
+                }`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4 }}
@@ -450,11 +425,11 @@ const Quiz: React.FC = () => {
                   <span className="font-medium">Giải thích: </span>
                   {isCorrectAnswer
                     ? questions[current].answerOptions[
-                      answers[current] as number
-                    ].rationale
+                        answers[current] as number
+                      ].rationale
                     : questions[current].answerOptions[
-                      findCorrectAnswerIndex(questions[current])
-                    ].rationale}
+                        findCorrectAnswerIndex(questions[current])
+                      ].rationale}
                 </div>
               </motion.div>
             )}
@@ -513,35 +488,35 @@ const Quiz: React.FC = () => {
                 ans !== null &&
                 !questions[idx]?.answerOptions[ans]?.isCorrect
             ) && (
-                <div className="mt-6 text-left max-w-xl mx-auto">
-                  <div className="font-semibold text-red-600 mb-2">
-                    Các câu bạn trả lời sai, hãy lưu ý:
-                  </div>
-                  <ul className="space-y-4">
-                    {questions.map((q, idx) =>
-                      answers[idx] !== null &&
-                        !q.answerOptions[answers[idx] as number].isCorrect ? (
-                        <li
-                          key={idx}
-                          className="bg-red-50 border-l-4 border-red-400 p-4 rounded"
-                        >
-                          <div className="font-medium text-gray-800 mb-1">
-                            Câu {idx + 1}: {q.question}
-                          </div>
-                          <div className="text-gray-700 mb-1">
-                            <span className="font-semibold">Đáp án đúng:</span>{" "}
-                            {String.fromCharCode(65 + findCorrectAnswerIndex(q))}.{" "}
-                            {q.answerOptions[findCorrectAnswerIndex(q)].text}
-                          </div>
-                          <div className="text-gray-600 text-sm italic">
-                            {q.answerOptions[findCorrectAnswerIndex(q)].rationale}
-                          </div>
-                        </li>
-                      ) : null
-                    )}
-                  </ul>
+              <div className="mt-6 text-left max-w-xl mx-auto">
+                <div className="font-semibold text-red-600 mb-2">
+                  Các câu bạn trả lời sai, hãy lưu ý:
                 </div>
-              )}
+                <ul className="space-y-4">
+                  {questions.map((q, idx) =>
+                    answers[idx] !== null &&
+                    !q.answerOptions[answers[idx] as number].isCorrect ? (
+                      <li
+                        key={idx}
+                        className="bg-red-50 border-l-4 border-red-400 p-4 rounded"
+                      >
+                        <div className="font-medium text-gray-800 mb-1">
+                          Câu {idx + 1}: {q.question}
+                        </div>
+                        <div className="text-gray-700 mb-1">
+                          <span className="font-semibold">Đáp án đúng:</span>{" "}
+                          {String.fromCharCode(65 + findCorrectAnswerIndex(q))}.{" "}
+                          {q.answerOptions[findCorrectAnswerIndex(q)].text}
+                        </div>
+                        <div className="text-gray-600 text-sm italic">
+                          {q.answerOptions[findCorrectAnswerIndex(q)].rationale}
+                        </div>
+                      </li>
+                    ) : null
+                  )}
+                </ul>
+              </div>
+            )}
             <button
               className="mt-8 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
               onClick={resetQuiz}
