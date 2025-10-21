@@ -34,67 +34,46 @@ type ArticleItem = {
 
 const ARTICLES: ArticleItem[] = [
   {
-    id: "a1",
-    title: "Hơn 2,2 triệu người ly hôn/ly thân: tỉnh thành nào cao nhất?",
-    sourceName: "Người Lao Động",
-    href: "https://nld.com.vn/hon-22-trieu-nguoi-ly-hon-ly-than-tinh-thanh-nao-cao-nhat-196250301165652065.htm",
-    cover: "https://nld.mediacdn.vn/zoom/320_200/291774122806476800/2025/3/1/tay-nam-tay-cua-mot-ban-nam-va-ban-nu-dang-yeu-nhau-ho-dat-tay-nhau-di-nguoi-chau-a-17408226856441621386085-95-97-624-943-crop-17408226975121424645101.png",
-    tags: ["Ly hôn", "Đô thị", "25–35"],
-    summary: "Bài viết điểm hiện trạng ly hôn tăng ở nhóm dân cư trẻ tại các đô thị lớn; gợi mở các nguyên nhân & hệ quả xã hội.",
+    id: "ref1",
+    title: "19-5-1941: Thành lập Mặt trận Việt Minh",
+    sourceName: "Bảo tàng Lịch sử Việt Nam",
+    href: "https://baotanglichsu.vn/vi/Articles/3097/16382/19-5-1941-thanh-lap-mat-tran-viet-minh.html",
   },
   {
-    id: "a2",
-    title: "Các nhóm bạo lực gia đình & nguyên nhân",
-    sourceName: "Hội Liên hiệp Phụ nữ Việt Nam",
-    href: "https://vwu.vn/web/guest/tin-chi-tiet/-/chi-tiet/cac-nhom-bao-luc-gia-%C4%91inh-nguyen-nhan-49367-7.html",
-    cover: "https://vwu.vn/documents/20182/4186676/15_Aug_2022_072514_GMTblgd_nguyennhan.jpg/77bd4a0a-9175-43f8-ac14-f89deadbd463",
-    tags: ["Bạo lực", "Tinh thần", "Kinh tế"],
-    summary: "Nhận diện dạng bạo lực tinh thần, kiểm soát trên mạng xã hội, và bạo lực kinh tế trong đời sống gia đình.",
+    id: "ref2",
+    title: "Báo chí cách mạng Việt Nam thắp lửa soi đường cho thắng lợi của Cách mạng Tháng Tám",
+    sourceName: "Vietnam.vn",
+    href: "https://www.vietnam.vn/bao-chi-cach-mang-viet-nam-thap-lua-soi-duong-cho-thang-loi-cua-cach-mang-thang-tam",
   },
   {
-    id: "a3",
-    title: "Áp lực kinh tế & chi phí y tế của già hoá dân số",
-    sourceName: "Báo Đầu tư",
-    href: "https://baodautu.vn/ap-luc-kinh-te-va-chi-phi-y-te-cua-gia-hoa-dan-so-d202825.html",
-    cover: "https://dansohcm.gov.vn/wp-content/uploads/2023/10/IMG_2892.jpeg",
-    tags: ["Phúc lợi", "Người cao tuổi", "Chi phí"],
-    summary: "Phân tích áp lực kinh tế – y tế trong bối cảnh già hoá dân số, liên hệ tới chất lượng thời gian gia đình.",
+    id: "ref3",
+    title: "Cách mạng Tháng Tám năm 1945 – Bước ngoặt vĩ đại của cách mạng Việt Nam thế kỷ XX",
+    sourceName: "Tạp chí Cộng sản",
+    href: "https://tapchicongsan.org.vn/web/guest/chinh-tri-xay-dung-dang/-/2018/959002/cach-mang-thang-tam-nam-1945---buoc-ngoat-vi-dai-cua-cach-mang-viet-nam-the-ky-xx.aspx",
   },
   {
-    id: "a3-1",
-    title: "Thực trạng và giải pháp chăm sóc người cao tuổi ở Việt Nam hiện nay",
-    sourceName: "VHU",
-    href: "https://vhu.edu.vn/Resources/Docs/SubDomain/xhtt/2021/Th%E1%BB%B1c%20tr%E1%BA%A1ng%20v%C3%A0%20gi%E1%BA%A3i%20ph%C3%A1p%20ch%C4%83m%20s%C3%B3c%20ng%C6%B0%E1%BB%9Di%20cao%20tu%E1%BB%95i%20%E1%BB%9F%20Vi%E1%BB%87t%20Nam%20hi%E1%BB%87n%20nay.pdf",
-    cover: "https://javilink.com.vn/wp-content/uploads/2023/05/thuc-trang-hien-nay-cua-nguoi-cao-tuoi.jpg",
-    tags: ["Chăm sóc", "Người cao tuổi"],
-    summary: "Chương trình chăm sóc sức khỏe người cao tuổi đến năm 2030 đặt mục tiêu: 100% người cao tuổi được khám sức khỏe định kỳ, 50% xã phường có mô hình chăm sóc ban ngày.",
+    id: "ref4",
+    title: "Giáo trình Lịch sử Đảng cộng sản Việt Nam",
+    sourceName: "Sách giáo trình",
+    href: "/assets/giao-trinh-lich-su-dang-cong-san-viet-nam.pdf",
   },
   {
-    id: "a4",
-    title: "Thanh thiếu niên & mạng xã hội: rủi ro và định hướng",
-    sourceName: "Tài liệu học thuật, báo chí",
-    href: "https://scholar.dlu.edu.vn/thuvienso/bitstream/DLU123456789/209913/1/CVv39S212023087.pdf",
-    cover: "https://tamly.com.vn/wp-content/uploads/2022/01/mang-xa-hoi-anh-huong-den-tam-ly-3.jpg",
-    tags: ["Mạng xã hội", "Giá trị", "Thanh niên"],
-    summary: "Tổng hợp góc nhìn về ảnh hưởng của mạng xã hội đến nhận thức, chuẩn mực và hành vi của giới trẻ.",
+    id: "ref5",
+    title: "Nhật đảo chính Pháp tại Đông Dương (Wikipedia)",
+    sourceName: "Wikipedia",
+    href: "https://vi.wikipedia.org/wiki/Nh%E1%BA%ADt_%C4%91%E1%BA%A3o_ch%C3%ADnh_Ph%C3%A1p_t%E1%BA%A1i_%C4%90%C3%B4ng_D%C6%B0%C6%A1ng",
   },
   {
-    id: "a4-1",
-    title: "Làn sóng đen trên mạng xã hội: nguy cơ khó lường và giải pháp ngăn chặn",
-    sourceName: "Báo Dân tộc",
-    href: "https://baodantoc.vn/lan-song-den-tren-mang-xa-hoi-nguy-co-kho-luong-va-giai-phap-ngan-chan-1740716792922.htm",
-    cover: "https://images.baodantoc.vn/uploads/2025/Thang-2/Ngay-28/Bang-Ngan/nhung-tac-hai-cua-mang-xa-hoi-khi-su-dung-sai-cach-ban-nen1.jpg",
-    tags: ["Mạng xã hội", "Rủi ro"],
-    summary: "Việt Nam có 76.95 triệu người dùng mạng xã hội (chiếm 78.1% dân số). Hơn 60% thanh thiếu niên từng tiếp xúc với nội dung không lành mạnh trên mạng xã hội.",
+    id: "ref6",
+    title: "Sự chủ động sáng tạo của các Đảng bộ địa phương trong Cách mạng Tháng Tám năm 1945",
+    sourceName: "Tạp chí Lịch sử Đảng",
+    href: "https://tapchilichsudang.vn/su-chu-dong-sang-tao-cua-cac-dang-bo-dia-phuong-trong-cach-mang-thang-tam-nam-1945.html",
   },
   {
-    id: "a4-2",
-    title: "Thanh niên thế hệ Z trước sự phát triển của mạng xã hội ở Việt Nam hiện nay",
-    sourceName: "Thanh niên Việt",
-    href: "https://thanhnienviet.vn/thanh-nien-the-he-z-truoc-su-phat-trien-cua-mang-xa-hoi-o-viet-nam-hien-nay-209241001111330009.htm",
-    cover: "https://thanhnienviet.mediacdn.vn/zoom/700_438/91575133199802368/2024/10/1/phat-huy-y-thuc-trach-nhiem-cua-1727755925951241130105-72-0-597-840-crop-1727755937310264382910.jpg",
-    tags: ["Mạng xã hội", "Thanh niên"],
-    summary: "Mạng xã hội ảnh hưởng đến nhận thức xã hội qua niềm tin, thái độ cộng đồng và kiến thức người dùng.",
+    id: "ref7",
+    title: "Việt Nam trong Chiến tranh thế giới thứ hai (Wikipedia)",
+    sourceName: "Wikipedia",
+    href: "https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam_trong_Chi%E1%BA%BFn_tranh_th%E1%BA%BF_gi%E1%BB%9Bi_th%E1%BB%A9_hai",
   },
 ];
 
@@ -480,7 +459,7 @@ const IntroPage: React.FC = () => {
         <Collapsible
           idAnchor="sangtao"
           title="III. SỰ SÁNG TẠO"
-          subtitle="Sáng tạo về đường lối, sách lược và phương pháp" 
+          subtitle="Sáng tạo về đường lối, sách lược và phương pháp"
           icon={<FaLightbulb />}
         >
           <div className="space-y-4">
@@ -528,7 +507,7 @@ const IntroPage: React.FC = () => {
           </div>
         </Collapsible>
 
-        {/* Articles Library */}
+        {/* Nguồn tham khảo */}
         <section id="articles" className="bg-white/95 rounded-3xl shadow-2xl border border-indigo-100 backdrop-blur p-6 md:p-8">
           <div className="flex items-center gap-4 mb-6">
             <div className="shrink-0 w-14 h-14 flex items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white text-2xl shadow-lg">
@@ -536,29 +515,34 @@ const IntroPage: React.FC = () => {
             </div>
             <div>
               <h3 className="text-xl md:text-2xl font-bold text-gray-900">
-                Thư viện bài báo & Nguồn tham khảo
+                Nguồn tham khảo
               </h3>
               <p className="text-sm md:text-base text-gray-600 mt-1">
-                Nhấn vào từng bài để xem tóm tắt và truy cập nguồn gốc
+                Danh sách các tài liệu, bài báo và nguồn sử dụng trong chuyên đề:
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {ARTICLES.map(article => (
-              <motion.button
-                key={article.id}
-                onClick={() => setArticleModal(article)}
-                className="text-left bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all"
-                whileHover={{ scale: 1.03 }}
-              >
-                <img src={article.cover} alt={article.title} className="w-full h-32 object-cover" />
-                <div className="p-4">
-                  <h4 className="font-bold text-gray-900 leading-tight mb-2">{article.title}</h4>
-                  <p className="text-xs text-indigo-600 font-semibold">{article.sourceName}</p>
-                </div>
-              </motion.button>
+          <ul className="list-disc list-inside space-y-2 text-base md:text-lg text-indigo-800 pl-4">
+            {ARTICLES.map((item) => (
+              <li key={item.id}>
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-indigo-600"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <span className="font-semibold">{item.title}</span>
+                )}
+                {item.sourceName && (
+                  <span className="ml-2 text-sm text-gray-500">({item.sourceName})</span>
+                )}
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
         {/* Conclusion */}
