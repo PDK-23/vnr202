@@ -390,15 +390,45 @@ const IntroPage: React.FC = () => {
           idAnchor="banlinh"
           title="II. BẢN LĨNH CHÍNH TRỊ"
           subtitle="Bản lĩnh độc lập, tự chủ và quyết đoán"
-          icon={<FaLightbulb />}
+          icon={<FaLightbulb className="text-yellow-500" />}
         >
-          <div className="space-y-4">
-            <h4 className="font-bold">Những điểm chính</h4>
-            <ul className="list-disc list-inside ml-4 space-y-2">
-              <li>Hội nghị Trung ương lần thứ 8 (5/1941) do Nguyễn Ái Quốc chủ trì khẳng định nhiệm vụ giải phóng dân tộc là ưu tiên hàng đầu.</li>
-              <li>Nguyên tắc: Quyền lợi của bộ phận, của giai cấp phải phục tùng quyền lợi của toàn thể dân tộc.</li>
-              <li>Ra quyết định kịp thời sau Nhật đảo chính Pháp (3/1945) với Chỉ thị "Nhật – Pháp bắn nhau và hành động của chúng ta" — thể hiện bản lĩnh dự đoán và hành động nhanh nhạy.</li>
-            </ul>
+          <div className="space-y-6 text-gray-800 leading-relaxed">
+            {/* Phần 1 */}
+            <section className="bg-gray-50 p-4 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
+              <h4 className="font-bold text-lg text-red-600 mb-2">
+                1. Giương cao ngọn cờ Giải phóng Dân tộc
+              </h4>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li><strong>Hội nghị Trung ương 8 (5/1941)</strong> – do Nguyễn Ái Quốc chủ trì tại Cao Bằng.</li>
+                <li><strong>Nhiệm vụ cấp bách:</strong> Giải phóng dân tộc là nhiệm vụ hàng đầu.</li>
+                <li><strong>Nguyên tắc tối cao:</strong> Lợi ích giai cấp phục tùng lợi ích dân tộc.</li>
+                <li>Khắc phục hạn chế <em>Luận cương 1930</em>, khẳng định đường lối cách mạng giải phóng dân tộc đúng đắn.</li>
+                <li className="list-none text-green-700 font-medium">
+                  → Thể hiện bản lĩnh chính trị kiên định, ngọn cờ dẫn đường cho toàn dân.
+                </li>
+              </ul>
+            </section>
+
+            {/* Phần 2 */}
+            <section className="bg-gray-50 p-4 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200">
+              <h4 className="font-bold text-lg text-red-600 mb-2">
+                2. Dự đoán và Ra quyết định kịp thời
+              </h4>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>Sau sự kiện <strong>Nhật đảo chính Pháp (9/3/1945)</strong> → Đảng dự đoán đúng và ra <em>Chỉ thị “Nhật – Pháp bắn nhau và hành động của chúng ta”</em> (12/3/1945).</li>
+                <li><strong>Kẻ thù cụ thể:</strong> Phát xít Nhật.</li>
+                <li>
+                  <strong>Chuyển hướng khẩu hiệu:</strong>
+                  <ul className="list-disc list-inside ml-6">
+                    <li>“Đánh đuổi phát xít Nhật”</li>
+                    <li>“Thành lập chính quyền cách mạng của nhân dân Đông Dương”.</li>
+                  </ul>
+                </li>
+                <li className="list-none text-green-700 font-medium">
+                  → Thể hiện bản lĩnh lãnh đạo kiên quyết, kịp thời, kim chỉ nam hành động trong cao trào kháng Nhật cứu nước.
+                </li>
+              </ul>
+            </section>
           </div>
         </Collapsible>
 

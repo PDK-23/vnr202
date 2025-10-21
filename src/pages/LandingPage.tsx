@@ -61,12 +61,14 @@ const LandingPage: React.FC = () => {
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hình nền */}
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
-        style={{ backgroundImage: `url(${videoBg})` }}
+        className="absolute inset-0 w-full h-full bg-cover bg-center z-0 brightness-75"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(${videoBg})`,
+        }}
       />
 
-      {/* Overlay mờ */}
-      <div className="absolute inset-0 bg-black/60 z-10" />
+      {/* Overlay mờ tối */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80 z-10" />
 
       {/* Nội dung Landing Page & Intro */}
       <AnimatePresence mode="wait">
